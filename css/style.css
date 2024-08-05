@@ -1162,6 +1162,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / 0.1);
 }
 
+.bg-white\/5 {
+  background-color: rgb(255 255 255 / 0.05);
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -1184,6 +1188,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\/images\/board\]\.jpg\'\)\] {
   background-image: url('/images/board].jpg');
+}
+
+.bg-\[url\(\'\/images\/1_1\.jpg\'\)\] {
+  background-image: url('/images/1_1.jpg');
 }
 
 .from-cyan-900 {
