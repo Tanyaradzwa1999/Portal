@@ -1182,6 +1182,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/images/books.jpg');
 }
 
+.bg-\[url\(\'\/images\/board\]\.jpg\'\)\] {
+  background-image: url('/images/board].jpg');
+}
+
 .from-cyan-900 {
   --tw-gradient-from: #164e63;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 78 99 / 0));
