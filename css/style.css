@@ -571,6 +571,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .m-8 {
   margin: 2rem;
 }
@@ -609,12 +613,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
-.-ml-10 {
-  margin-left: -2.5rem;
+.-ml-8 {
+  margin-left: -2rem;
 }
 
 .mb-10 {
@@ -685,6 +689,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -6.5px;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
 }
@@ -695,10 +703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mb-20 {
@@ -715,10 +719,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-60 {
   margin-top: 15rem;
-}
-
-.-ml-8 {
-  margin-left: -2rem;
 }
 
 .block {
@@ -893,10 +893,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -917,10 +917,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1106,11 +1106,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: hsl(208 79 34 / var(--tw-border-opacity));
 }
 
-.bg-veryDarkBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -1118,6 +1113,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-veryDarkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
 }
 
 .bg-stone-100 {
@@ -1145,6 +1145,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -1155,6 +1160,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/images\/board\.jpg\'\)\] {
+  background-image: url('/images/board.jpg');
 }
 
 .from-cyan-900 {
@@ -1181,6 +1190,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-indigo-100\/20 {
   --tw-gradient-to: rgb(224 231 255 / 0.2);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-6 {
@@ -1300,8 +1317,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -1320,18 +1337,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .font-light {
@@ -1411,6 +1419,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.9;
 }
 
+.opacity-10 {
+  opacity: 0.1;
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1427,9 +1439,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-gray-700 {
+  --tw-shadow-color: #374151;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-100 {
+  --tw-shadow-color: #f3f4f6;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.blur-lg {
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-sm {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
@@ -1478,6 +1510,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+`
 /* @layer base {
   h3 {
     @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
@@ -1503,7 +1536,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 body {
   background-image: url("../images/bg-curve-desktop.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  position: center;
 }
 
 /* @media (max-width: 576px) {

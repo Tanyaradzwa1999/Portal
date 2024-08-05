@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+`
 /* @layer base {
   h3 {
     @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
@@ -27,7 +27,8 @@
 body {
   background-image: url("../images/bg-curve-desktop.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  position: center;
 }
 
 /* @media (max-width: 576px) {
