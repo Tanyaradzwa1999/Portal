@@ -1166,6 +1166,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/images/board.jpg');
 }
 
+.bg-\[url\(\'\/images\/books\.jpg\'\)\] {
+  background-image: url('/images/books.jpg');
+}
+
 .from-cyan-900 {
   --tw-gradient-from: #164e63;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 78 99 / 0));
@@ -1446,6 +1450,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .shadow-gray-100 {
   --tw-shadow-color: #f3f4f6;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-600 {
+  --tw-shadow-color: #4b5563;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-stone-600 {
+  --tw-shadow-color: #57534e;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-stone-800 {
+  --tw-shadow-color: #292524;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-stone-900 {
+  --tw-shadow-color: #1c1917;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
