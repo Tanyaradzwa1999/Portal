@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Margarine&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- modal -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js"
+      integrity="sha512-/HL24m2nmyI2+ccX+dSHphAHqLw60Oj5sK8jf59VWtFWZi9vx7jzoxbZmcBeeTeCUc7z1mTs3LfyXGuBU32t+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal-bs3patch.css"
+      integrity="sha512-PLPZdOXQAXELGb6+1GKTjIRzI9fiIYmI6280sxmd9dGDgPND3cWmxBddOtQHmUELldeVLIgl8FrLUHyz3B9Y3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- nav bar section -->
+
+    <nav
+      class="navbar h-20 md:h-16 fixed w-full bg-opacity-100 md:bg-opacity-95 ease-in-out duration-500"
+    >
+      <div
+        class="md:flex hidden justify-center space-x-10 font-light md:fixed top-0 md:top-6 md:left-1/2 md:right-1/2"
+      >
+        <a href="#about">About</a><a href="#tabs">Experience</a
+        ><a href="#myWork">Portfolio</a><a href="#services">Services</a
+        ><a href="">Testimonials</a><a href="#contact">Contact</a>
+      </div>
+      <!-- Hamburger Button -->
+    </nav>
+    <div class="border-b-[0.1px] top-20 md:top-16 fixed w-full"></div>
+    <div class="fixed top-5 z-50 block md:hidden">
+      <button
+        id="menu-btn"
+        class="focus:outline-none hamburger fixed left-[340px] top-[20px]"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <div
+      id="menu"
+      class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue transition-all ease-in-out duration-500"
+    >
+      <div class="w-full py-3 text-center menu-item">
+        <a href="#about">About</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#tabs" class="block hover:text-softRed menu-item"
+          >Experience</a
+        >
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#myWork" class="block hover:text-softRed menu-item"
+          >Portfolio</a
+        >
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#services" class="block hover:text-softRed menu-item"
+          >Services</a
+        >
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#" class="block hover:text-softRed menu-item">Testimonials</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#" class="block hover:text-softRed menu-item">FAQs</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#contact" class="block hover:text-softRed menu-item"
+          >Contact</a
+        >
+      </div>
+    </div>
+    <!-- hero section -->
+    <section
+      class="flex flex-col md:items-center md:justify-center md:flex-row section-container md:h-screen pt-24 md:pt-0"
+    >
+      <div
+        class="flex flex-col md:flex-row md:justify-between items-center space-y-16"
+      >
+        <div class="flex flex-col space-y-6">
+          <p class="text-slate-500">Greetings, my name is Chikosha Tan</p>
+          <h3 class="max-w-2xl text-3xl md:text-5xl font-Baskervville">
+            frontend web developer, embedded systems developer, qualified
+            electrical engineer
+          </h3>
+          <a href="#about"
+            ><button
+              class="bg-white w-full md:w-1/3 border border-black text-slate-500 uppercase px-8 py-4 hover:bg-black hover:text-white transition delay-200"
+            >
+              find out more
+            </button></a
+          >
+        </div>
+        <img
+          src="images/portfolio.jpg"
+          class="md:w-1/3 md:h-1/2 rounded sm"
+          alt=""
+        />
+      </div>
+    </section>
+    <div
+      class="bg-stone-100 relative md:absolute bottom-0 w-full py-8 px-8 md:px-0 md:flex md:justify-center md:items-center text-2xl space-x-10 text-slate-400 flex-wrap"
+    >
+      <i class="fa-brands fa-apple"></i>
+      <i class="fa-brands fa-docker"></i>
+      <i class="fa-brands fa-squarespace"></i>
+      <i class="fa-brands fa-yelp"></i>
+      <i class="fa-brands fa-airbnb"></i>
+      <i class="fa-brands fa-supple"></i>
+      <i class="fa-brands fa-strava"></i>
+      <i class="fa-brands fa-swift"></i>
+      <i class="fa-brands fa-java"></i>
+      <i class="fa-brands fa-cloudflare"></i>
+      <i class="fa-brands fa-wordpress"></i>
+      <i class="fa-brands fa-linux"></i>
+      <i class="fa-brands fa-superpowers"></i>
+    </div>
+    <!-- about section -->
+    <section
+      class="section-container flex flex-col items-center space-y-4 my-20"
+      id="about"
+    >
+      <h3 class="font-Baskervville">About</h3>
+      <p class="text-justify md:max-w-2xl max-w-sm leading-8 text-lg">
+        I'm a passionate frontend developer with a strong foundation in
+        electrical engineering and embedded systems. My journey began with a
+        Bachelor's degree in Electrical Engineering, where I honed my skills in
+        circuit design, microcontrollers, and embedded software. This technical
+        background gives me a unique perspective when developing user
+        interfaces, allowing me to bridge the gap between hardware and software
+        seamlessly.
+      </p>
+
+      <p class="text-justify md:max-w-2xl max-w-sm leading-8 text-lg">
+        Over the years, I've transitioned into the world of web development,
+        finding a love for creating intuitive and visually appealing interfaces.
+        I have a keen eye for design and a knack for solving complex problems,
+        which drives my approach to building responsive and user-friendly web
+        applications. With experience in HTML, CSS, JavaScript, and popular
+        frameworks like React, I strive to deliver engaging digital experiences
+        that resonate with users.
+      </p>
+
+      <p class="text-justify md:max-w-2xl max-w-sm leading-8 text-lg">
+        I'm always eager to learn and stay updated with the latest industry
+        trends, continuously improving my craft. Whether it's collaborating with
+        cross-functional teams or diving deep into new technologies, I thrive on
+        challenges and am committed to delivering high-quality solutions.
+      </p>
+    </section>
+    <section
+      class="section-container flex flex-col items-center space-y-4 mb-10"
+      id="about"
+    >
+      <h3 class="font-Baskervville">What is web development ?</h3>
+      <p class="text-justify md:max-w-2xl max-w-sm leading-8 text-lg">
+        Web development is the process of creating and maintaining websites and
+        web applications that are accessible through the internet. It combines
+        coding, design, and problem-solving skills to build sites that are not
+        only functional but also user-friendly and visually appealing. There are
+        two main parts to web development: front-end development, which focuses
+        on what users see and interact with, and back-end development, which
+        handles the behind-the-scenes operations like servers, databases, and
+        application logic. This field is always evolving with new technologies
+        and trends, allowing developers to come up with innovative solutions
+        that meet the needs of both users and businesses.
+      </p>
+    </section>
+
+    <div class="section section-container block md:hidden">
+      <div
+        class="h-[62px] w-full bg-gradient-to-r from-cyan-900 via-cyan-500 to-cyan-900 p-[2px] select-menu"
+      >
+        <div
+          class="w-full h-full flex justify-between uppercase py-[16px] px-[30px] relative bg-white select-menu"
+        >
+          <div class="selectionMenu">Skills</div>
+          <button
+            id="menu-btn"
+            class="focus:outline-none absolute left-[280px] z-50 open-2"
+          >
+            <span class="hamburger-top-1"></span>
+            <span class="hamburger-middle-1"></span>
+            <span class="hamburger-bottom-1"></span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="w-full h-full flex flex-col items-start uppercase relative bg-white border-b-2 border-l-2 border-r-2 border-gray-400/70 hidden dropdownMenu"
+      >
+        <div class="w-full">
+          <div class="w-full flex flex-col items-start">
+            <div
+              class="px-[30px] py-4 flex w-full dropDownItem bg-ExperiencesBlue text-white"
+              data-target="panel-1"
+            >
+              Skills
+            </div>
+          </div>
+        </div>
+        <div class="dropDownItem w-full">
+          <div class="w-full flex flex-col items-start">
+            <div
+              class="px-[30px] py-4 flex w-full dropDownItem"
+              data-target="panel-2"
+            >
+              Experience
+            </div>
+          </div>
+        </div>
+        <div class="dropDownItem w-full">
+          <div class="w-full flex flex-col items-start">
+            <div
+              class="px-[30px] py-4 flex w-full dropDownItem"
+              data-target="panel-3"
+            >
+              profile
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skills mobile -->
+    </div>
+    <!-- profile tab -->
+    <div class="bg-stone-100">
+      <section id="tabs" class="">
+        <!-- Tabs/Panels Container -->
+        <div class="container relative mx-auto my-6 mb-32 mt-12 px-6 py-12">
+          <div class="bg-tabs"></div>
+          <!-- Tabs Flex Container -->
+          <div
+            class="hidden md:flex flex-col items-center justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row uppercase"
+          >
+            <!-- Tab 1 -->
+            <div
+              class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+              data-target="panel-1"
+            >
+              <div
+                class="py-5 border-b-4 border-softRed skills"
+                data-target="panel-1"
+              >
+                Skills
+              </div>
+            </div>
+            <!-- tab 2 -->
+            <div
+              class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+              data-target="panel-2"
+            >
+              <div class="py-5 experience" data-target="panel-2">
+                Experience
+              </div>
+            </div>
+            <!-- tab3 -->
+            <div
+              class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+              data-target="panel-3 ease-in duration-300"
+            >
+              <div class="py-5 profile" data-target="panel-3">Profile</div>
+            </div>
+          </div>
+
+          <!-- Tab Panels -->
+          <div id="panels" class="section-container mx-auto text-lg">
+            <div
+              class="flex flex-col md:space-x-7 panel panel-1 items-start max-w-lg md:max-w-2xl space-y-4 mx-auto ease-in-out duration-500"
+            >
+              <!-- Panel Image -->
+              <!-- main flex for alle xperience -->
+              <div class="flex flex-col w-full my-10 space-y-10">
+                <div class="flex flex-col md:flex-row space-x-2">
+                  <div
+                    class="md:w-32 w-28 h-14 md:h-16 bg-ExperiencesBlue text-white text-md flex items-center justify-center mb-0 ml-2 md:ml-4 flex-none"
+                  >
+                    Front-end
+                  </div>
+                  <div
+                    class="border-b-[2.5px] block md:hidden border-b-ExperiencesBlue w-full -mt-[2.5px] ml-2"
+                  ></div>
+                  <div
+                    class="relative hidden md:block border border-ExperiencesBlue mt-[3px] -left-[10px]"
+                  ></div>
+                  <!-- flex col for java heading -->
+                  <div class="items-start flex flex-col max-w-lg">
+                    <h5 class="my-4">JavaScript</h5>
+                    <div
+                      class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 flex-wrap justify-start"
+                    >
+                      <span class="text-gray-700 font-normal"
+                        >Single page applications (SPA)</span
+                      >
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >React</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Next.js</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >TypeScript</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Webpack</a
+                        >
+                      </div>
+
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Apollo</a
+                        >
+                      </div>
+                    </div>
+                    <!-- css flex box -->
+                    <h5 class="mt-10 mb-4">HTML & CSS</h5>
+                    <div
+                      class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 flex-wrap justify-start"
+                    >
+                      <span class="text-gray-700 font-normal"
+                        >CSS frameworks (responsive websites)</span
+                      >
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Tailwind</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Bootstrap</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 flex-wrap justify-start mt-2"
+                    >
+                      <span class="text-gray-700 font-normal"
+                        >CSS processors (reduced code bloat)</span
+                      >
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Sass</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Less</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Myth</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- flex-box backend heading -->
+                <div class="flex flex-col md:flex-row space-x-2">
+                  <div
+                    class="md:w-32 w-28 h-14 md:h-16 bg-ExperiencesBlue text-white text-md flex items-center justify-center mb-0 ml-0 md:ml-4 flex-none"
+                  >
+                    Back-end
+                  </div>
+                  <div
+                    class="border-b-[2.5px] block md:hidden border-b-ExperiencesBlue w-full -mt-[2.5px] ml-2"
+                  ></div>
+                  <div
+                    class="relative hidden md:block border border-ExperiencesBlue mt-[3px] -left-[10px]"
+                  ></div>
+                  <!-- flex col for java heading -->
+                  <div
+                    class="items-start flex flex-col max-w-md justify-center"
+                  >
+                    <h5 class="my-4">Frameworks & DBs</h5>
+                    <div
+                      class="flex flex-col items-start md:flex-row text-sm font-semibold text-ExperiencesBlue space-y-8"
+                    >
+                      <!-- flex box for skills and bullets -->
+                      <div
+                        class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 justify-start flex-wrap"
+                      >
+                        <div class="flex items-center space-x-2">
+                          <a
+                            href=""
+                            class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                            >Node.js</a
+                          >
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <div
+                            class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                          ></div>
+                          <a
+                            href=""
+                            class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                            >Express.js</a
+                          >
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <div
+                            class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                          ></div>
+                          <a
+                            href=""
+                            class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                            >Django</a
+                          >
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <div
+                            class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                          ></div>
+                          <a
+                            href=""
+                            class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                            >MySQL</a
+                          >
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <div
+                            class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                          ></div>
+                          <a
+                            href=""
+                            class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                            >Redis</a
+                          >
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex items-start justify-start md:items-center"
+                      >
+                        <div
+                          class="hidden md:w-2 md:h-2 bg-gray-700 rounded-full"
+                        ></div>
+                        <div class="text-gray-700 font-normal">
+                          third-party APIs (Facebook, Twitter, YouTube, GitHub,
+                          etc.)
+                        </div>
+                      </div>
+                    </div>
+                    <!-- css flex box -->
+                  </div>
+                </div>
+                <!-- flex item for other skills -->
+                <div class="flex flex-col md:flex-row space-x-2">
+                  <div
+                    class="md:w-32 w-28 h-14 md:h-16 bg-ExperiencesBlue text-white text-md flex items-center justify-center mb-0 ml-0 md:ml-4 flex-none"
+                  >
+                    Others
+                  </div>
+                  <div
+                    class="border-b-[2.5px] block md:hidden border-b-ExperiencesBlue w-full -mt-[2.5px] ml-2"
+                  ></div>
+                  <div
+                    class="relative hidden md:block border border-ExperiencesBlue mt-[3px] -left-[10px]"
+                  ></div>
+                  <!-- flex col for java heading -->
+                  <div class="flex flex-col max-w-md justify-center">
+                    <div
+                      class="text-sm font-normal text-gray-700 flex space-x-4 flex-wrap"
+                    >
+                      <div class="flex items-center space-x-2">
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Microsoft Azure</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Search engine optimization(SE0)</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Internet of things</a
+                        >
+                      </div>
+                    </div>
+                    <!-- css flex box -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel Content -->
+            </div>
+
+            <!-- Panel 2 -->
+
+            <!-- Panel 3 -->
+            <div
+              class="flex hidden flex-col md:space-x-7 panel panel-2 items-start max-w-6xl md:max-w-2xl space-y-4 ease-in-out duration-500 w-full h-full"
+            >
+              <!-- Panel Image -->
+              <!-- main flex for all xperience -->
+              <div class="flex flex-col w-full my-10 space-y-10">
+                <div class="flex flex-col md:flex-row w-full">
+                  <!-- flexd item for year container -->
+                  <div
+                    class="w-24 h-10 bg-ExperiencesBlue text-white text-md flex items-center justify-center mb-0 ml-4 flex-none"
+                  >
+                    2024
+                  </div>
+                  <!-- flex item for video button and circle -->
+                  <div class="flex space-x-4 -mt-8 ml-32">
+                    <div
+                      class="video-play-button w-32 h-32 absolute -ml-1 -mt-[6.5px]"
+                    ></div>
+                    <div class="w-4 h-4 bg-softRed rounded-full mt-3"></div>
+                    <div
+                      class="relative hidden md:block border border-ExperiencesBlue mt-[40px] -left-[24px]"
+                    ></div>
+                  </div>
+
+                  <!-- flex item for job done-->
+                  <div
+                    class="text-sm ml-8 flex flex-col max-w-6xl mt-1 items-start space-y-8 md:space-y-4"
+                  >
+                    <h5 class="">Frontend Developer</h5>
+                    <div
+                      class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between w-full"
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-building"></i>
+                        <p class="">Nelson Mandela University</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="">Port Elizabeth</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="font-semibold text-gray-700 flex space-x-4 flex-wrap justify-start"
+                    >
+                      <p
+                        class="leading-8 text-left md:text-justify mt-4 max-w-6xl"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        A dicta consectetur repellat. Rerum fugiat quidem
+                        impedit distinctio maxime iusto necessitatibus minima,
+                        maiores temporibus blanditiis neque sint assumenda
+                        tempore, nulla perspiciatis voluptate accusamus. Placeat
+                        nulla vel aliquid officia vitae quidem culpa quibusdam
+                        reprehenderit in sunt, repellendus amet dolorem,
+                        consequuntur doloribus sed esse, perferendis fuga
+                        numquam illum voluptatum voluptatem odit? Sed tenetur
+                        commodi dolore veritatis id iste perferendis ipsum
+                        repellendus fugiat. Quo.
+                      </p>
+                    </div>
+                    <!-- css flex box -->
+                    <h5 class="mt-10 mb-4">Development Tools</h5>
+                    <div
+                      class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 flex-wrap justify-start"
+                    >
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Tailwind</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Bootstrap</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Sass</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Less</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Myth</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- flex-box backend heading -->
+                <div class="flex flex-col md:flex-row w-full">
+                  <!-- flexd item for year container -->
+                  <div
+                    class="w-24 h-10 bg-ExperiencesBlue text-white text-md flex items-center justify-center mb-0 ml-4 flex-none"
+                  >
+                    2024
+                  </div>
+                  <!-- flex item for video button and circle -->
+                  <div class="flex space-x-4 -mt-8 ml-32">
+                    <div
+                      class="video-play-button w-32 h-32 absolute -ml-1 -mt-[6.5px]"
+                    ></div>
+                    <div class="w-4 h-4 bg-softRed rounded-full mt-3"></div>
+                    <div
+                      class="relative hidden md:block border border-ExperiencesBlue mt-[40px] -left-[24px]"
+                    ></div>
+                  </div>
+
+                  <!-- flex item for job done-->
+                  <div
+                    class="text-sm ml-8 flex flex-col max-w-6xl mt-1 items-start space-y-8 md:space-y-4"
+                  >
+                    <h5 class="">Frontend Developer</h5>
+                    <div
+                      class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between w-full"
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-building"></i>
+                        <p class="">Nelson Mandela University</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="">Port Elizabeth</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="font-semibold text-gray-700 flex space-x-4 flex-wrap justify-start"
+                    >
+                      <p
+                        class="leading-8 text-left md:text-justify mt-4 max-w-6xl"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        A dicta consectetur repellat. Rerum fugiat quidem
+                        impedit distinctio maxime iusto necessitatibus minima,
+                        maiores temporibus blanditiis neque sint assumenda
+                        tempore, nulla perspiciatis voluptate accusamus. Placeat
+                        nulla vel aliquid officia vitae quidem culpa quibusdam
+                        reprehenderit in sunt, repellendus amet dolorem,
+                        consequuntur doloribus sed esse, perferendis fuga
+                        numquam illum voluptatum voluptatem odit? Sed tenetur
+                        commodi dolore veritatis id iste perferendis ipsum
+                        repellendus fugiat. Quo.
+                      </p>
+                    </div>
+                    <!-- css flex box -->
+                    <h5 class="mt-10 mb-4">Development Tools</h5>
+                    <div
+                      class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 flex-wrap justify-start"
+                    >
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Tailwind</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Bootstrap</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Sass</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Less</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Myth</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- flex item for other skills -->
+                <div class="flex flex-col md:flex-row w-full">
+                  <!-- flexd item for year container -->
+                  <div
+                    class="w-24 h-10 bg-ExperiencesBlue text-white text-md flex items-center justify-center mb-0 ml-4 flex-none"
+                  >
+                    2024
+                  </div>
+                  <!-- flex item for video button and circle -->
+                  <div class="flex space-x-4 -mt-8 ml-32">
+                    <div
+                      class="video-play-button w-32 h-32 absolute -ml-1 -mt-[6.5px]"
+                    ></div>
+                    <div class="w-4 h-4 bg-softRed rounded-full mt-3"></div>
+                    <div
+                      class="relative hidden md:block border border-ExperiencesBlue mt-[40px] -left-[24px]"
+                    ></div>
+                  </div>
+
+                  <!-- flex item for job done-->
+                  <div
+                    class="text-sm ml-8 flex flex-col max-w-6xl mt-1 items-start space-y-8 md:space-y-4"
+                  >
+                    <h5 class="">Frontend Developer</h5>
+                    <div
+                      class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between w-full"
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-building"></i>
+                        <p class="">Nelson Mandela University</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="">Port Elizabeth</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="font-semibold text-gray-700 flex space-x-4 flex-wrap justify-start"
+                    >
+                      <p
+                        class="leading-8 text-left md:text-justify mt-4 max-w-6xl"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        A dicta consectetur repellat. Rerum fugiat quidem
+                        impedit distinctio maxime iusto necessitatibus minima,
+                        maiores temporibus blanditiis neque sint assumenda
+                        tempore, nulla perspiciatis voluptate accusamus. Placeat
+                        nulla vel aliquid officia vitae quidem culpa quibusdam
+                        reprehenderit in sunt, repellendus amet dolorem,
+                        consequuntur doloribus sed esse, perferendis fuga
+                        numquam illum voluptatum voluptatem odit? Sed tenetur
+                        commodi dolore veritatis id iste perferendis ipsum
+                        repellendus fugiat. Quo.
+                      </p>
+                    </div>
+                    <!-- css flex box -->
+                    <h5 class="mt-10 mb-4">Development Tools</h5>
+                    <div
+                      class="text-sm font-semibold text-ExperiencesBlue flex space-x-4 flex-wrap justify-start"
+                    >
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Tailwind</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Bootstrap</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Sass</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Less</a
+                        >
+                      </div>
+                      <div class="flex items-center space-x-2">
+                        <div
+                          class="w-2 h-2 bg-ExperiencesBlue rounded-full"
+                        ></div>
+                        <a
+                          href=""
+                          class="hover:text-lg hover:border-b hover:border-ExperiencesBlue transition-all delay-100"
+                          >Myth</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of flex item -->
+              </div>
+
+              <!-- Panel Content -->
+            </div>
+            <div
+              class="flex hidden items-center justify-center space-x-8 md:space-x-14 panel panel-3 ease-out duration-500 text-sm md:text-lg"
+            >
+              <div class="flex flex-col py-5 space-y-4">
+                <!-- Panel Image -->
+
+                <div class="flex space-x-20">
+                  <div class="flex space-x-2 items-center">
+                    <i class="fa-solid fa-user text-ExperiencesBlue"></i>
+                    <p>Full Name:</p>
+                  </div>
+                </div>
+                <div class="flex space-x-5">
+                  <div class="flex space-x-2 Justify-start items-center">
+                    <i class="fa-solid fa-user-tie text-ExperiencesBlue"></i>
+                    <div class="flex space-x-2">
+                      <p>Professional</p>
+                      <p>Title:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex space-x-24">
+                  <div class="flex space-x-2 Justify-start items-center">
+                    <i
+                      class="fa-solid fa-location-dot text-ExperiencesBlue"
+                    ></i>
+                    <p>Location:</p>
+                  </div>
+                </div>
+                <div class="flex space-x-28 justify-start items-center">
+                  <div class="flex space-x-2 Justify-start items-center">
+                    <i class="fa-solid fa-envelope text-ExperiencesBlue"></i>
+                    <p>Email:</p>
+                  </div>
+                </div>
+
+                <!-- Panel Content -->
+              </div>
+              <div class="flex flex-col py-5 space-y-4 items-start">
+                <p>Chikosha Tanyaradzwa</p>
+                <p>Frontend Web Developer</p>
+                <p>Port Elizabeth, South Africa</p>
+                <p>chokixatanya1919@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 2 profile -->
+        </div>
+      </section>
+    </div>
+
+    <!-- works heading -->
+    <section
+      class="flex flex-col items-center section-container mb-20 mx-auto"
+      id="myWork"
+    >
+      <h3>Checkout My Work</h3>
+    </section>
+
+    <!-- flex col for projects rows container-->
+    <section
+      class="flex flex-col justify-center section-container my-20 mx-auto"
+      id="work"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+      >
+        <!-- flex for image and content -->
+        <div class="relative w-full md:w-3/5 group">
+          <img
+            src="images/phone.bmp"
+            class="w-full rounded-2xl contrast-10 hue-rotate-20"
+            alt=""
+          />
+          <div
+            class="w-full md:w-3/5 rounded-2xl absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-violet-100/20 from-10% via-transparent via-10% to-indigo-100/20 to-90%"
+          ></div>
+        </div>
+        <div class="items-start flex flex-col max-w-md">
+          <h5>Dog Walker Chatting App</h5>
+          <p class="text-justify mt-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+            illo temporibus quos sequi cupiditate aliquam rem voluptatem et
+            sunt, cum odio magnam nam? Libero vel at blanditiis quidem sequi
+            officia animi consequuntur assumenda architecto? Voluptate quibusdam
+            officiis, quas molestiae a, necessitatibus laborum veritatis non
+            rerum eveniet similique! Voluptatem, magnam provident!
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0 w-full mt-6"
+          >
+            <div class="">
+              <p class="uppercase">Development Tools</p>
+              <div class="flex space-x-2 items-center ml-4 mt-4">
+                <div class="w-[5px] h-[5px] bg-gray-600"></div>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="group">
+              <a
+                class="flex space-x-2 text-ExperiencesBlue items-center group-hover:underline-offset-8 group-hover:underline group-hover:decoration-1"
+                href="https://mobile-demo-project-using-tailwind.vercel.app/"
+              >
+                <p class=" ">View Project</p>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- modal # -->
+        </div>
+      </div>
+    </section>
+    <!-- yavin office project -->
+    <section
+      class="flex flex-col justify-center section-container my-20 mx-auto"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+      >
+        <!-- flex for image and content -->
+        <div class="relative w-full md:w-3/5 group">
+          <img
+            src="images/yavin_office.bmp"
+            class="w-full rounded-2xl contrast-10 hue-rotate-20"
+            alt=""
+          />
+          <div
+            class="w-full md:w-3/5 rounded-2xl absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-violet-100/20 from-10% via-transparent via-10% to-indigo-100/20 to-90%"
+          ></div>
+        </div>
+        <div class="items-start flex flex-col max-w-md">
+          <h5>Yavin Office Landing Page</h5>
+          <p class="text-justify mt-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+            illo temporibus quos sequi cupiditate aliquam rem voluptatem et
+            sunt, cum odio magnam nam? Libero vel at blanditiis quidem sequi
+            officia animi consequuntur assumenda architecto? Voluptate quibusdam
+            officiis, quas molestiae a, necessitatibus laborum veritatis non
+            rerum eveniet similique! Voluptatem, magnam provident!
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0 w-full mt-6"
+          >
+            <div class="">
+              <p class="uppercase">Development Tools</p>
+              <div class="flex space-x-2 items-center ml-4 mt-4">
+                <div class="w-[5px] h-[5px] bg-gray-600"></div>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="group">
+              <a
+                class="flex space-x-2 text-ExperiencesBlue items-center group-hover:underline-offset-8 group-hover:underline group-hover:decoration-1"
+                href="https://mobile-demo-project-using-tailwind.vercel.app/"
+              >
+                <p class=" ">View Project</p>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- modal # -->
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section
+      class="flex flex-col justify-center section-container my-20 mx-auto"
+      id="work"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+      >
+        <!-- flex for image and content -->
+        <div class="relative w-full md:w-3/5 group">
+          <img
+            src="images/clipboard.bmp"
+            class="w-full rounded-2xl contrast-10 hue-rotate-20"
+            alt=""
+          />
+          <div
+            class="w-full md:w-3/5 rounded-2xl absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-violet-100/20 from-10% via-transparent via-10% to-indigo-100/20 to-90%"
+          ></div>
+        </div>
+        <div class="items-start flex flex-col max-w-md">
+          <h5>Clipboard Landing Page</h5>
+          <p class="text-justify mt-6 text-md">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+            illo temporibus quos sequi cupiditate aliquam rem voluptatem et
+            sunt, cum odio magnam nam? Libero vel at blanditiis quidem sequi
+            officia animi consequuntur assumenda architecto? Voluptate quibusdam
+            officiis, quas molestiae a, necessitatibus laborum veritatis non
+            rerum eveniet similique! Voluptatem, magnam provident!
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0 w-full mt-6"
+          >
+            <div class="">
+              <p class="uppercase">Development Tools</p>
+              <div class="flex space-x-2 items-center ml-4 mt-4">
+                <div class="w-[5px] h-[5px] bg-gray-600"></div>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="group">
+              <a
+                class="flex space-x-2 text-ExperiencesBlue items-center group-hover:underline-offset-8 group-hover:underline group-hover:decoration-1"
+                href="https://mobile-demo-project-using-tailwind.vercel.app/"
+              >
+                <p class=" ">View Project</p>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- modal # -->
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col justify-center section-container my-20 mx-auto"
+      id="work"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+      >
+        <!-- flex for image and content -->
+        <div class="relative w-full md:w-3/5 group">
+          <img
+            src="images/fylo.bmp"
+            class="w-full rounded-2xl contrast-10 hue-rotate-20"
+            alt=""
+          />
+          <div
+            class="w-full md:w-3/5 rounded-2xl absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-violet-100/20 from-10% via-transparent via-10% to-indigo-100/20 to-90%"
+          ></div>
+        </div>
+        <div class="items-start flex flex-col max-w-md">
+          <h5>Fylo Website</h5>
+          <p class="text-justify mt-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+            illo temporibus quos sequi cupiditate aliquam rem voluptatem et
+            sunt, cum odio magnam nam? Libero vel at blanditiis quidem sequi
+            officia animi consequuntur assumenda architecto? Voluptate quibusdam
+            officiis, quas molestiae a, necessitatibus laborum veritatis non
+            rerum eveniet similique! Voluptatem, magnam provident!
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0 w-full mt-6"
+          >
+            <div class="">
+              <p class="uppercase">Development Tools</p>
+              <div class="flex space-x-2 items-center ml-4 mt-4">
+                <div class="w-[5px] h-[5px] bg-gray-600"></div>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="group">
+              <a
+                class="flex space-x-2 text-ExperiencesBlue items-center group-hover:underline-offset-8 group-hover:underline group-hover:decoration-1"
+                href="https://mobile-demo-project-using-tailwind.vercel.app/"
+              >
+                <p class=" ">View Project</p>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- modal # -->
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-col justify-center section-container my-20 mx-auto"
+      id="work"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between space-y-12 md:space-y-0"
+      >
+        <!-- flex for image and content -->
+        <div class="relative w-full md:w-3/5 group">
+          <img
+            src="images/ebook_website.bmp"
+            class="w-full rounded-2xl contrast-10 hue-rotate-20"
+            alt=""
+          />
+          <div
+            class="w-full md:w-3/5 rounded-2xl absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-violet-100/20 from-10% via-transparent via-10% to-indigo-100/20 to-90%"
+          ></div>
+        </div>
+        <div class="items-start flex flex-col max-w-md">
+          <h5>Bookmark Website</h5>
+          <p class="text-justify mt-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+            illo temporibus quos sequi cupiditate aliquam rem voluptatem et
+            sunt, cum odio magnam nam? Libero vel at blanditiis quidem sequi
+            officia animi consequuntur assumenda architecto? Voluptate quibusdam
+            officiis, quas molestiae a, necessitatibus laborum veritatis non
+            rerum eveniet similique! Voluptatem, magnam provident!
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0 w-full mt-6"
+          >
+            <div class="">
+              <p class="uppercase">Development Tools</p>
+              <div class="flex space-x-2 items-center ml-4 mt-4">
+                <div class="w-[5px] h-[5px] bg-gray-600"></div>
+                <p>Tailwind</p>
+              </div>
+            </div>
+            <div class="group">
+              <a
+                class="flex space-x-2 text-ExperiencesBlue items-center group-hover:underline-offset-8 group-hover:underline group-hover:decoration-1"
+                href="https://mobile-demo-project-using-tailwind.vercel.app/"
+              >
+                <p class=" ">View Project</p>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- modal # -->
+        </div>
+      </div>
+    </section>
+    <!-- typing effect section -->
+    <div class="bg-stone-100 py-20" id="services">
+      <section class="section-container mx-auto">
+        <div class="flex justify-center">
+          <h3 class="text-4xl" aria-label="Hi! I'm a developer ">
+            Are You Looking For &nbsp;<span class="typewriter"></span>
+          </h3>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between my-8 md:my-20 space-y-8 md:space-y-0"
+        >
+          <div class="flex flex-col items-start md:items-center space-y-4">
+            <h5 class="text-ExperiencesBlue md:text-2xl text-3xl">
+              Experience
+            </h5>
+            <p
+              class="md:text-slate-500 text-left md:text-center max-w-xl md:max-w-sm text-lg font-light leading-8"
+            >
+              I have worked for digital agencies, well established companies as
+              well as startups . I have experience working with clients and
+              remote development teams (20+) across different time zones. With
+              over 2 years' experience, I know where the pitfalls are in custom
+              web applications and website projects, and how to guide you
+              through safely.
+            </p>
+          </div>
+          <div class="flex flex-col items-start md:items-center space-y-4">
+            <h5 class="text-ExperiencesBlue md:text-2xl text-3xl">Process</h5>
+            <p
+              class="md:text-slate-500 text-left md:text-center max-w-xl md:max-w-sm text-lg font-light leading-8"
+            >
+              My detailed, step-by-step process ensures no crucial information
+              get overlooked unintentionally potentially failing your project.
+              For each project, before I start coding, I go through a thorough
+              road-mapping session in which I define S.M.A.R.T. (specific,
+              measurable, attainable, relevant, time-bound) goals for the
+              project.
+            </p>
+          </div>
+          <div class="flex flex-col items-start md:items-center space-y-4">
+            <h5 class="text-ExperiencesBlue md:text-2xl text-3xl">
+              Satisfaction
+            </h5>
+            <p
+              class="md:text-slate-500 text-left md:text-center max-w-xl md:max-w-sm text-lg font-light leading-8"
+            >
+              I progressively and automatically test the developed features to
+              make sure the application behaves properly, and to catch any bugs
+              early. Once-off projects often turn into long-term business
+              relationships, with clients enjoying ongoing guidance and support
+              long after I've satisfied completed the task at hand.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- faqs -->
+    <!-- FAQ Heading -->
+    <section id="faq">
+      <div class="container mx-auto mt-20">
+        <h2
+          class="mb-6 text-3xl font-semibold text-center md:text-4xl font-Baskervville"
+        >
+          FAQs
+        </h2>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq-accordion ">
+      <!-- Main Container -->
+      <div class="container mx-auto px-6 mb-32 max-w-2xl">
+        <!-- Accordion Container -->
+        <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+          <!-- Tab 1 -->
+          <div class="py-1 border-b outline-none group" tabindex="1">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-200 ease group-hover:text-softRed"
+              >
+                Technologies and Frameworks Proficiency:
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-softRed"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p
+                class="py-2 text-justify text-slate-500text-slate-50text-slate-500text-slate-500"
+              >
+                I am skilled in HTML, CSS, JavaScript, and modern frameworks
+                like React and Vue.js. My expertise extends to tools such as
+                Webpack, Sass, and Bootstrap, ensuring responsive and dynamic
+                web applications that meet contemporary standards and client
+                needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div class="py-1 border-b outline-none group" tabindex="2">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-200 ease group-hover:text-softRed"
+              >
+                Version Control Systems Experience:
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-softRed"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p
+                class="py-2 text-justify text-slate-500text-slate-500text-slate-50text-slate-500text-slate-500"
+              >
+                I am experienced with Git for version control, utilizing
+                platforms like GitHub and GitLab for collaborative development.
+                This ensures efficient project management, version tracking, and
+                smooth collaboration with other developers and stakeholders.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div class="py-1 border-b outline-none group" tabindex="3">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-200 ease group-hover:text-softRed"
+              >
+                Development Process:
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-softRed"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p
+                class="py-2 text-justify text-slate-500text-slate-500text-slate-500text-slate-50text-slate-500text-slate-500"
+              >
+                My development process involves requirement analysis, design,
+                coding, testing, and deployment. I follow Agile methodologies to
+                ensure iterative progress and client feedback incorporation,
+                ensuring the final product meets the desired expectations and
+                standards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 4 -->
+          <div class="py-1 border-b outline-none group" tabindex="4">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-200 ease group-hover:text-softRed"
+              >
+                Rates and Availability:
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-softRed"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p
+                class="py-2 text-justify text-slate-500text-slate-500text-slate-500text-slate-500text-slate-50text-slate-500text-slate-500"
+              >
+                My rates are competitive and vary based on the project scope and
+                complexity. I am currently available for new projects and can
+                discuss specific timelines and pricing details during our
+                initial consultation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-container mt-20">
+      <div class="flex justify-center"><h3>Get In Touch</h3></div>
+    </section>
+    <!-- form for contact ---------->
+    <section class="section-container mb-20 mx-auto">
+      <form
+        action="submit"
+        class="flex-col space-y-4 p-8 md:p-10 mx-auto focus:outline-none shadow-xl shadow-slate-200 text-gray-700 max-w-6xl md:max-w-2xl"
+      >
+        <div
+          class="flex flex-col md:flex-row space-y-6 space-x-0 md:space-y-0 md:space-x-4"
+        >
+          <input
+            type="text"
+            placeholder="First Name"
+            class="w-full md:w-1/2 px-4 py-2 focus:outline-none border-b text-gray-700"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="w-full md:w-1/2 px-4 py-2 focus:outline-none border-b text-gray-700"
+          />
+        </div>
+        <input
+          type="text"
+          placeholder="Work Email"
+          class="w-full px-4 py-4 md:py-2 focus:outline-none border-b"
+        />
+        <div
+          class="flex flex-col md:flex-row space-y-6 space-x-0 md:space-y-0 md:space-x-4"
+        >
+          <input
+            type="text"
+            placeholder="Job Title"
+            class="w-full md:w-1/2 px-4 py-2 focus:outline-none border-b"
+          />
+          <input
+            type="text"
+            placeholder="Work Telephone"
+            class="w-full md:w-1/2 px-4 py-2 focus:outline-none border-b"
+          />
+        </div>
+        <div
+          class="flex flex-col md:flex-row space-y-6 space-x-0 md:space-y-0 md:space-x-4"
+        >
+          <select
+            id="countries"
+            class="border-b block w-full md:w-1/2 p-2.5 focus:outline-none"
+          >
+            <option selected>Select Desired Completion Time</option>
+            <option value="US">Less than 1 Month</option>
+            <option value="CA">1 -2 Months</option>
+            <option value="FR">2-3 Months</option>
+            <option value="DE">3-6 Months</option>
+            <option value="DE">6 months+</option>
+          </select>
+
+          <select
+            id="countries"
+            class="border-b block w-full md:w-1/2 p-2.5 focus:outline-none"
+          >
+            <option selected>Selected Budgeted Amount</option>
+            <option value="US">Less than $500</option>
+            <option value="CA">$500-$1000</option>
+            <option value="FR">$1000-$2500</option>
+            <option value="DE">$2500-$5000</option>
+            <option value="DE">$5000+</option>
+          </select>
+        </div>
+        <flex class="flex items-start space-x-4 w-full">
+          <textarea
+            id="message"
+            rows="4"
+            class="block p-2.5 w-full border border-gray-200 focus:outline-none"
+            placeholder="Leave Your Message Here..."
+          ></textarea>
+        </flex>
+        <button
+          class="w-full md:w-1/2 bg-ExperiencesBlue px-4 py-2 flex space-x-4 items-center justify-center text-white"
+        >
+          <p>SEND</p>
+
+          <i
+            class="fa fa-paper-plane"
+            aria-hidden="true"
+            class="text-white"
+          ></i>
+        </button>
+      </form>
+    </section>
+    <!-- to top btn -->
+    <button id="to-top" class="to-top-btn">
+      <img src="images/up-arrow.png" alt="" />
+    </button>
+    <!-- footer section -->
+    <div class="bg-veryDarkBlue py-20 mt-60">
+      <section class="section-container font-opensans text-start text-white">
+        <div
+          class="flex flex-col items-start space-y-12 md:flex-row md:justify-between md:space-y-0"
+        >
+          <div class="flex flex-col space-y-2">
+            <div class="flex items-center">
+              <img src="images/horse.svg" class="w-10" alt="" />
+              <h5 class="font-Margarine">Quantum</h5>
+              <h5 class="font-Margarine text-softRed">C</h5>
+              <h5 class="font-Margarine">oders</h5>
+            </div>
+            <p class="text-white font-light max-w-xs">
+              Engineering the Future, One Line of Code at a Time with Innovation
+              and Precision
+            </p>
+          </div>
+
+          <div class="flex flex-col space-y-4 items-start">
+            <h5 class="font-bold font-serif">Contact Us</h5>
+            <div class="flex space-x-4">
+              <img src="images/icon-phone.svg" class="w-6" alt="" />
+              <p class="">Phone: +27 634 851 321</p>
+            </div>
+            <div class="flex space-x-4">
+              <img src="images/icon-email.svg" class="w-6 h-6" alt="" />
+              <p class="">chikoxatanya@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex space-x-4 self-center md:self-start md:pace-x-6">
+            <div
+              class="w-14 h-14 md:w-10 md:h-10 border-2 border-white rounded-full flex items-center justify-center"
+            >
+              <i class="fa-brands fa-instagram text-2xl md:text-xl"></i>
+            </div>
+            <div
+              class="w-14 h-14 border-2 md:w-10 md:h-10 border-white rounded-full flex items-center justify-center"
+            >
+              <i class="fa-brands fa-twitter text-2xl md:text-xl"></i>
+            </div>
+            <div
+              class="w-14 h-14 border-2 md:w-10 md:h-10 border-white rounded-full flex items-center justify-center"
+            >
+              <i
+                class="fa-brands fa-facebook-f text-2xl text-white md:text-xl"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- section for the works -->
+    <!-- <div class="attribution">
+      
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+
+  <script src="sources/tabs-script.js"></script>
+  <script src="sources/up_button_script.js"></script>
+</html>
