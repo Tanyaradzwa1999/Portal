@@ -1210,6 +1210,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/images/1_1.jpg');
 }
 
+.bg-\[url\(\'\/images\/black\.jpg\'\)\] {
+  background-image: url('/images/black.jpg');
+}
+
 .from-cyan-900 {
   --tw-gradient-from: #164e63;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 78 99 / 0));
@@ -1242,6 +1246,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-center {
   background-position: center;
+}
+
+.bg-left {
+  background-position: left;
 }
 
 .p-6 {
