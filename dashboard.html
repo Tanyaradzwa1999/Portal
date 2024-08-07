@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/style.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-veryDarkBlue">
+    <!-- flex box for the login contents -->
+    <div class="flex flex-col justify-center items-center h-screen">
+      <div
+        class="flex max-w-3xl px-6 pb-6 backdrop-blur-sm bg-white/10 z-40 rounded-t-lg w-full border-b border-gray-500"
+      >
+        <div
+          class="flex space-x-2 justify-between w-full -mt-2 operations__tab-container"
+        >
+          <div class="operations__tab" data-tab="1">
+            <p
+              class="rounded-full px-6 py-2 w-full focus:outline-none text-gray-700 bg-white hover:backdrop-blur-lg hover:opacity-80 transition-all duration-200 bg-orange-500"
+            >
+              Academics
+            </p>
+          </div>
+
+          <div class="operations__tab" data-tab="2">
+            <p
+              class="rounded-full px-6 py-2 w-full focus:outline-none text-gray-700 bg-white hover:backdrop-blur-lg hover:opacity-80 transition-all duration-200"
+            >
+              Finance
+            </p>
+          </div>
+
+          <div class="operations__tab" data-tab="3">
+            <p
+              class="rounded-full px-6 py-2 w-full focus:outline-none text-gray-700 bg-white hover:backdrop-blur-lg hover:opacity-80 transition-all duration-200"
+            >
+              Profile
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- subjects panel -->
+      <div
+        class="flex max-w-3xl px-6 pb-6 backdrop-blur-sm bg-white/10 z-40 shadow-xl rounded-b-lg w-full operations__content operations__content--1 operations__content--active"
+      >
+        <!-- flex column for the sublects  -->
+        <div class="flex flex-col">
+          <div class="flex  justify-between ">
+            <div class="">
+              <p
+                class=" px-6 py-2 w-full focus:outline-none border-r border-gray-500 text-gray-700 bg-white "
+                data-attribute="academics"
+              >
+                Results
+              </p>
+            </div>
+            <div class="">
+              <p
+                class="  px-6 py-2 w-full focus:outline-none text-white bg-transparent  hover:bg-white hover:text-black transition-all duration-200"
+                data-attribute="academics"
+              >
+                Tasks
+              </p>
+            </div>
+
+            <div class="">
+              <div
+                class=" flex space-x-2  px-6 py-2 w-full focus:outline-none  text-white bg-transparent  hover:bg-white hover:text-black transition-all duration-200"
+              >
+                <p class="" data-attribute="finance">Time</p>
+                <p>Table</p>
+              </div>
+            </div>
+         
+          <!-- second row of subjects -->
+          
+            <div class="">
+              <p
+                class=" px-6 py-2 w-full focus:outline-none text-white bg-transparent  hover:bg-white hover:text-black transition-all duration-200"
+                data-attribute="academics"
+              >
+                Exams
+              </p>
+            </div>
+            <div class="">
+              <p
+                class="  px-6 py-2 w-full focus:outline-none text-white bg-transparent  hover:bg-white hover:text-black transition-all duration-200 "
+                data-attribute="academics"
+              >
+                Library
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="  px-6 py-2 w-full focus:outline-none text-white  hover:bg-white hover:text-black transition-all duration-200 "
+                data-attribute="academics"
+              >
+                Support
+              </p>
+            </div>
+          </div>
+        
+      </div>
+
+      <!-- tab for finances -->
+
+      <div
+        class="flex max-w-xl p-6 backdrop-blur-sm bg-white/10 z-40 shadow-xl rounded-b-lg w-full operations__content operations__content--2"
+      >
+        <!-- flex column for the sublects  -->
+        <div class="flex flex-col space-y-4">
+          <div class="flex space-x-2 justify-between">
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-white bg-transparent"
+                data-attribute="academics"
+              >
+                Woodwork
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-white bg-transparent"
+                data-attribute="finance"
+              >
+                Fashion
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-white bg-transparent"
+                data-attribute="profile"
+              >
+                Shona
+              </p>
+            </div>
+          </div>
+          <!-- second row of subjects -->
+          <div class="flex space-x-2 justify-between">
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="academics"
+              >
+                Accounts
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="finance"
+              >
+                History
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="profile"
+              >
+                Divinity
+              </p>
+            </div>
+          </div>
+          <!-- third row of subjects -->
+          <!-- second row of subjects -->
+          <div class="flex space-x-2 justify-between">
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="academics"
+              >
+                Computers
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="finance"
+              >
+                Maths
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="profile"
+              >
+                Agricultre
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- tab for profile -->
+
+      <div
+        class="flex max-w-xl p-6 backdrop-blur-sm bg-white/10 z-40 shadow-xl rounded-b-lg w-full operations__content operations__content--3"
+      >
+        <!-- flex column for the sublects  -->
+        <div class="flex flex-col space-y-4">
+          <div class="flex space-x-2 justify-between">
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="academics"
+              >
+                Name
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="finance"
+              >
+                Form
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="profile"
+              >
+                Adress
+              </p>
+            </div>
+          </div>
+          <!-- second row of subjects -->
+          <div class="flex space-x-2 justify-between">
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="academics"
+              >
+                Contact
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="finance"
+              >
+                History
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="profile"
+              >
+                Divinity
+              </p>
+            </div>
+          </div>
+          <!-- third row of subjects -->
+          <!-- second row of subjects -->
+          <div class="flex space-x-2 justify-between">
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="academics"
+              >
+                Computers
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="finance"
+              >
+                Maths
+              </p>
+            </div>
+
+            <div class="">
+              <p
+                class="rounded-full px-4 py-2 w-full focus:outline-none text-gray-700 bg-white"
+                data-attribute="profile"
+              >
+                Agricultre
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="translate_buttons_click.js"></script>
+</html>

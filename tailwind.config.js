@@ -44,6 +44,13 @@ module.exports = {
         LightGrayishViolet: "hsl(270, 20%, 96%)", // (app background)
         VeryDarkDesaturatedViolet: "hsl(271, 36%, 24%)", // (submit button background)
         VeryLightMagenta: "hsl(289, 100%, 72%)", //(radio button outline)
+
+        PaleBlue: "hsl(243, 100%, 93%)",
+        GrayishBlue: "hsl(229, 7%, 55%)",
+        DarkBlue: "hsl(228, 56%, 26%)",
+        VeryDarkBlue: "hsl(229, 57%, 11%)",
+        PalePink: "hsl(6, 100%, 80%)",
+        RedshPink: "hsl(335, 100%, 65%)",
       },
       fontFamily: {
         sans: ["Montserrat"],

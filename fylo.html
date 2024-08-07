@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <!-- document flex box -->
+    <div
+      class="flex flex-col justify-center items-center md:justify-end h-screen text-black md:bg-VeryDarkBlue"
+    >
+      <!-- container for fylo flexcol and the progress bar container -->
+      <div
+        class="flex flex-col md:flex-row md:items-end items-center gap-8 -mb-24"
+      >
+        <div
+          class="section-container z-20 text-white bg-DarkBlue rounded-l-lg rounded-br-lg rounded-tr-[90px] h-[240px] md:h-[180px] w-[325px] pt-10 pl-10"
+        >
+          <!-- flex column for the fylo box -->
+          <div class="flex flex-col space-y-8 md:space-y-6 justify-center">
+            <!-- first flex item -->
+            <img class="w-40 :w-32" src="images/logo.svg" alt="" />
+            <!-- flex row for icons -->
+            <div class="flex space-x-4">
+              <div
+                class="h-[50px] w-[50px] md:h-[40px] md:w-[40px] bg-VeryDarkBlue rounded-lg p-2"
+              >
+                <img
+                  src="images/icon-document.svg"
+                  class="md:w-[18px] w-[25px] mx-auto"
+                  alt=""
+                />
+              </div>
+              <div
+                class="h-[50px] w-[50px] md:h-[40px] md:w-[40px] bg-VeryDarkBlue rounded-lg p-2"
+              >
+                <img
+                  src="images/icon-folder.svg"
+                  class="md:w-[20px] w-[28px] mx-auto mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="h-[50px] w-[50px] md:h-[40px] md:w-[40px] bg-VeryDarkBlue rounded-lg p-2"
+              >
+                <img
+                  src="images/icon-upload.svg"
+                  class="md:w-[22px] w-[30px] mx-auto mt-1"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="section-container z-20 text-white bg-DarkBlue rounded-lg h-[200px] md:h-[150px] w-200px md:w-[500px] p-12 md:p-4 text-stone-300"
+        >
+          <!-- flex item for the callout -->
+          <!-- flex box for progress bar -->
+          <div class="flex"></div>
+          <div class="hidden md:block">
+            <div class="flex flex-col text-xs font-semibold items-end -mt-10">
+              <div
+                class="bg-white w-[10px] h-[100px] md:w-[150px] md:h-[50px] rounded-l-lg rounded-tr-lg"
+              >
+                <div class="flex justify-center items-center mt-2 space-x-2">
+                  <strong class="font-bold text-black text-3xl">185</strong
+                  ><span class="text-stone-400">GB LEFT</span>
+                </div>
+              </div>
+
+              <!-- callout drawing -->
+              <div class="w-[50px] h-[10px] draw-button"></div>
+            </div>
+          </div>
+
+          <!-- flex item for the data left wording -->
+          <div class="flex space-x-1">
+            <p>You've used</p>
+            <strong class="text-white mb-2">815 GB</strong>
+            <p>of your storage</p>
+          </div>
+
+          <!-- outer progress bar div -->
+          <div
+            class="my-4 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-[250px] md:w-[450px] p-[2px]"
+          >
+            <!-- inner progress bar div -->
+            <div
+              class="flex justify-end bg-gradient-to-r from-PalePink to-RedshPink rounded-full h-[15px] md:h-[10px] md:w-[340px] w-[200px]"
+            >
+              <!-- inner dot -->
+              <div
+                class="bg-white rounded-full h-[12px] w-[12px] md:h-[8px] md:w-[8px] mt-[1px] mr-[1.5px]"
+              ></div>
+            </div>
+          </div>
+          <!-- 0 GB flex item -->
+          <div class="flex text-xs font-semibold justify-between">
+            <p>o GB</p>
+            <p>1000 GB</p>
+          </div>
+          <div
+            class="block md:hidden flex flex-col text-xs font-semibold items-center md:items-end"
+          >
+            <div class="bg-white w-[160px] h-[70px] rounded-lg mt-4">
+              <div class="flex justify-center items-center mt-2 space-x-2">
+                <strong class="font-bold text-black text-4xl md:text-3xl"
+                  >185</strong
+                ><span class="text-stone-400 mt-4">GB LEFT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="h-1/2 w-full h-screen bg-cover bg-no-repeat z-10 hidden md:block"
+        style="background-image: url('images/bg-desktop.png')"
+      ></div>
+    </div>
+    <!--  <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Chikosha T</a>.
+    </div> -->
+  </body>
+</html>
