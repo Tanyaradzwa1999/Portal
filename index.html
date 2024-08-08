@@ -21,14 +21,14 @@
     <title>Document</title>
   </head>
   <!--  -->
-  <body class="bg-LightGrayishViolet">
+  <body class="md:bg-LightGrayishViolet bg-sky-900/60">
     <container
-      class="universal-container my-10 mx-52 bg-sky-900/60 px-20 flex justify-center items-center rounded-3xl"
+      class="universal-container my-0 pt-4 md:pt-0 md:my-10 mx-auto md:mx-52 md:bg-sky-900/60 bg-transparent md:px-20 flex justify-center items-center rounded-none md:rounded-3xl"
     >
       <div class="flex my-4 items-start">
         <!-- left side flex item -->
         <div
-          class="section bg-veryDarkBlue w-72 mt-8 px-4 pt-4 pb-32 rounded-3xl h-full"
+          class="section bg-veryDarkBlue w-72 mt-8 px-4 pt-4 pb-32 rounded-3xl h-full hidden md:block"
         >
           <!-- flex item for the side items -->
           <div class="flex flex-col">
@@ -129,7 +129,7 @@
         <!-- right side FLEEX item -->
         <div class="flex flex-col rounded-3xl p-2">
           <section class="text-center">
-            <nav class="navbar">
+            <nav class="navbar hidden md:block">
               <div class="md:flex space-x-32 my-8 w-full justify-between px-2">
                 <!-- events -->
                 <div class="flex space-x-2 items-center">
@@ -214,11 +214,13 @@
           <!-- section for content for the user after login -->
 
           <!-- FLEX BOX FOR THE BOTTOM CONTENT -->
-          <div class="flex space-x-12 max-w-6xl px-4">
+          <div
+            class="flex flex-col md:flex-row space-y-20 md:space-y-0 space-x-0 md:space-x-12 max-w-sm md:max-w-6xl px-4"
+          >
             <!-- flex column for the left welcome back back message -->
-            <div class="flex flex-col w-1/3">
+            <div class="flex flex-col w-full md:w-1/3">
               <div class="flex flex-col">
-                <strong class="text-veryDarkBlue text-2xl">
+                <strong class="text-white md:text-veryDarkBlue text-2xl">
                   Welcome Back Johanis !
                 </strong>
                 <!-- and item flex-col for motivational quote -->
@@ -302,15 +304,15 @@
                   >
                   <!-- progress bar -->
                   <div
-                    class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-[250px] md:w-[320px] p-[2px]"
+                    class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full md:w-[320px] p-[2px]"
                   >
                     <!-- inner progress bar div -->
                     <div
-                      class="flex justify-end bg-white rounded-full h-[15px] md:h-[10.5px] md:w-[100px] w-[100px]"
+                      class="flex justify-end bg-white rounded-full h-[15.5px] md:h-[10.5px] md:w-[100px] w-[100px]"
                     >
                       <!-- inner dot -->
                       <div
-                        class="bg-black rounded-full h-[12px] w-[12px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
+                        class="bg-black rounded-full h-[12.5px] w-[12.5px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
                       ></div>
                     </div>
                   </div>
@@ -326,29 +328,33 @@
 
                   <!-- first flex item -->
 
-                  <div class="flex items-center justify-between mt-2">
-                    <h5 class="text-xl font-semibold text-VeryDarkBlue">
+                  <div class="flex items-center justify-between mt-20 md:mt-2">
+                    <h5
+                      class="text-2xl text-white font-semibold md:text-VeryDarkBlue"
+                    >
                       Learning Corner
                     </h5>
 
                     <div class="flex space-x-8 items-center">
                       <i
-                        class="fa-solid fa-chevron-left text-VeryDarkBlue text-lg"
+                        class="fa-solid fa-chevron-left text-white md:text-VeryDarkBlue text-lg"
                       ></i>
                       <i
-                        class="fa-solid fa-chevron-right text-VeryDarkBlue text-lg"
+                        class="fa-solid fa-chevron-right text-white md:text-VeryDarkBlue text-lg"
                       ></i>
                     </div>
                   </div>
-                  <div class="flex items-center space-x-4">
+                  <div
+                    class="flex items-center space-x-4 justify-between mt-8 md:mt-0 px-6 md:px-0"
+                  >
                     <img
                       src="images/tambaoga.jpg"
-                      class="w-1/2 h-4/5 rounded-2xl"
+                      class="w-1/2 md:w-1/2 md:h-4/5 rounded-2xl"
                       alt=""
                     />
                     <img
                       src="images/jgrBriggs.jpeg"
-                      class="w-1/2 h-4/5 rounded-2xl"
+                      class="w-1/2 h-56 md:w-1/2 md:h-4/5 rounded-2xl"
                       alt=""
                     />
                   </div>
@@ -358,10 +364,14 @@
               <!-- second upcoming class -->
             </div>
             <!-- flex iMain FLEX BOX FOR SPLITTING item -->
-            <div class="flex flex-col w-2/3 h-1/3">
+            <div class="flex flex-col w-full md:w-2/3 md:h-1/3">
               <!-- flex box for NOTICE and achivements item -->
-              <div class="flex items-start space-x-4">
-                <div class="flex flex-col bg-white w-1/2 rounded-3xl p-4">
+              <div
+                class="flex flex-col md:flex-row items-start space-y-14 md:space-y-0 space-x-0 md:space-x-4"
+              >
+                <div
+                  class="flex flex-col bg-white w-full md:w-1/2 rounded-3xl p-4"
+                >
                   <div class="flex justify-between">
                     <div class="flex flex-col text-gray-700">
                       <strong class="text-xl text-VeryDarkBlue"
@@ -461,7 +471,7 @@
                   </div>
                 </div>
                 <!-- flex item for the RIGHT OF NOTICE BOARD -->
-                <div class="flex flex-col w-1/2 text-white">
+                <div class="flex flex-col md:w-1/2 text-white">
                   <div
                     class="flex space-x-8 w-full bg-white rounded-3xl p-4 items-start backdrop-blur-sm text-white mb-6"
                   >
@@ -545,18 +555,23 @@
 
               <!-- CHART AREA FLEX ITEM -->
               <div
-                class="bg-white rounded-3xl mt-4 px-4 pt-4 flex flex-col"
+                class="bg-white rounded-3xl mt-14 md:mt-4 px-4 pt-4 flex flex-col"
                 id="line-chart-container"
               >
-                <div class="flex justify-around items-center mb-4">
-                  <strong class="">Current Perfomance</strong>
-                  <div class="flex text-black items-center space-x-2">
-                    <strong>Subject:</strong>
-                    <strong>Math</strong>
+                <div
+                  class="flex flex-col md:flex-row items-start justify-around md:items-center mb-4"
+                >
+                  <div class="flex space-x-4 mt-4 md:mt-0">
+                    <strong class="">Current Perfomance</strong>
+                    <div class="flex text-black items-center space-x-2">
+                      <strong>Subject:</strong>
+                      <strong>Math</strong>
+                    </div>
                   </div>
+
                   <select
                     id="countries"
-                    class="border rounded-lg p-2.5 focus:outline-none"
+                    class="border rounded-lg p-2.5 focus:outline-none mt-4 md:mt-0"
                   >
                     <option selected>Select Subject</option>
                     <option value="US">Geography</option>
