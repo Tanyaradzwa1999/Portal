@@ -20,481 +20,531 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body class="bg-veryDarkBlue/90">
-    <div class="flex my-8">
-      <!-- left side flex item -->
-      <div
-        class="section fixed h-screen bg-veryDarkBlue w-64 left-[100px] p-4 rounded-xl"
-      >
-        <!-- flex item for the sidebar items -->
-        <div class="flex flex-col">
-          <div class="flex flex-col items-start space-y-1 mb-12">
-            <div class="flex items-center space-x-1">
-              <img
-                src="images/school.jpg"
-                class="w-16 h-16 rounded-full"
-                alt="school logo"
-              />
-              <div class="flex flex-col"></div>
+  <body class="bg-LightGrayishViolet">
+    <container
+      class="universal-container bg-veryDarkBlue mx-52 px-20 flex justify-center items-center rounded-3xl"
+    >
+      <div class="flex my-4 items-start">
+        <!-- left side flex item -->
+        <div class="section bg-veryDarkBlue w-72 mt-8 p-4 rounded-xl">
+          <!-- flex item for the sidebar items -->
+          <div class="flex flex-col">
+            <div class="flex flex-col items-start space-y-1 mb-12">
+              <div class="flex items-center space-x-1">
+                <img
+                  src="images/school.jpg"
+                  class="w-16 h-16 rounded-full"
+                  alt="school logo"
+                />
+                <div class="flex flex-col"></div>
 
-              <h5 class="text-white font-Baskervville">
-                Manzununu High School
-              </h5>
+                <h5 class="text-white font-Baskervville">
+                  Manzununu High School
+                </h5>
+              </div>
+              <strong class="text-xl text-gray-200"> Student Dashboard </strong>
             </div>
-            <h3 class="text-2xl text-white font-Baskervville font-semibold">
-              Student Dashboard
-            </h3>
-          </div>
-          <!-- balances flex item and container -->
-          <div
-            class="flex w-full bg-white/10 h-20 rounded-xl p-4 items-center backdrop-blur-sm justify-between"
-          >
-            <!-- flex column for the balance -->
-            <div class="flex flex-col">
-              <h5 class="text-gray-100 font-thin">Balance</h5>
-              <p class="text-white">ZW 16575.95</p>
+            <!-- balances flex item and container -->
+            <div
+              class="flex w-full bg-white/10 h-20 rounded-xl p-4 items-center backdrop-blur-sm justify-between"
+            >
+              <!-- flex column for the balance -->
+              <div class="flex flex-col">
+                <h5 class="text-gray-100 font-thin">Balance</h5>
+                <p class="text-white">ZW 16575.95</p>
+              </div>
+              <!-- three dots flex item -->
+              <div class="flex space-x-1">
+                <div class="w-1 h-1 bg-white/40 rounded full"></div>
+                <div class="w-1 h-1 bg-white/40 rounded full"></div>
+                <div class="w-1 h-1 bg-white/40 rounded full"></div>
+              </div>
             </div>
-            <!-- three dots flex item -->
-            <div class="flex space-x-1">
-              <div class="w-1 h-1 bg-white/40 rounded full"></div>
-              <div class="w-1 h-1 bg-white/40 rounded full"></div>
-              <div class="w-1 h-1 bg-white/40 rounded full"></div>
+            <h5 class="text-white mt-8 text-xl">Main Menu</h5>
+            <!-- to dashboard container -->
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4"
+            >
+              <!-- flex column for the balance -->
+
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <p>Dashboard</p>
             </div>
-          </div>
-          <h5 class="text-white mt-8 text-xl">Main Menu</h5>
-          <!-- to dashboard container -->
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4"
-          >
-            <!-- flex column for the balance -->
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2"
+            >
+              <!-- flex column for the balance -->
 
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            <p>Dashboard</p>
-          </div>
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2"
-          >
-            <!-- flex column for the balance -->
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <p>Results</p>
+            </div>
+            <!--Assignments  -->
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
+            >
+              <i class="fas fa-tasks"></i>
+              <!--  -->
+              <p>Assignments</p>
+            </div>
+            <!-- library -->
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
+            >
+              <i class="fa-solid fa-book-open"></i>
+              <!--  -->
+              <p>Resources</p>
+            </div>
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
+            >
+              <i class="fa-solid fa-sack-dollar"></i>
+              <!--  -->
+              <p>Finances</p>
+            </div>
 
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            <p>Results</p>
-          </div>
-          <!--Assignments  -->
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
-          >
-            <i class="fas fa-tasks"></i>
-            <!--  -->
-            <p>Assignments</p>
-          </div>
-          <!-- library -->
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
-          >
-            <i class="fa-solid fa-book-open"></i>
-            <!--  -->
-            <p>Resources</p>
-          </div>
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
-          >
-            <i class="fa-solid fa-sack-dollar"></i>
-            <!--  -->
-            <p>Finances</p>
-          </div>
+            <!-- OTHERS -->
+            <h5 class="text-white mt-8 text-xl">Others</h5>
+            <!-- to dashboard container -->
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4"
+            >
+              <!-- flex column for the balance -->
 
-          <!-- OTHERS -->
-          <h5 class="text-white mt-8 text-xl">Others</h5>
-          <!-- to dashboard container -->
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4"
-          >
-            <!-- flex column for the balance -->
+              <i class="fa-solid fa-people-group"></i>
+              <p>Social Clubs</p>
+            </div>
+            <div
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2"
+            >
+              <!-- flex column for the balance -->
 
-            <i class="fa-solid fa-people-group"></i>
-            <p>Social Clubs</p>
-          </div>
-          <div
-            class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2"
-          >
-            <!-- flex column for the balance -->
-
-            <i class="fa fa-cog" aria-hidden="true"></i>
-            <p>Settings</p>
+              <i class="fa fa-cog" aria-hidden="true"></i>
+              <p>Settings</p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- right side flex item -->
-      <div class="flex flex-col mx-auto">
-        <section class="text-center">
-          <nav class="navbar">
-            <div class="md:flex space-x-32 my-8 items-center w-full">
-              <!-- events -->
-              <div class="flex space-x-2 items-center">
-                <div class="">
-                  <flex class="flex-col space-y-1"
-                    ><div class="w-8 h-[3px] rounded-full bg-white"></div>
-                    <div class="w-6 h-[3px] rounded-full bg-white"></div>
-                    <div class="w-4 h-[3px] rounded-full bg-white"></div
-                  ></flex>
-                </div>
-                <h5 class="text-2xl text-white font-Margarine">Events</h5>
-              </div>
-
-              <!-- second flex item for navbar -->
-
-              <form action="" class="">
-                <div class="flex space-x-8">
-                  <!-- flex for search icon and input box -->
-                  <div class="flex items-center">
-                    <input
-                      type="text"
-                      placeholder="Search Files..."
-                      class="rounded-l-full py-2 px-6 w-52 focus:outline-none"
-                    />
-                    <div class="py-2 px-6 bg-white rounded-r-full">
-                      <i class="fas fa-search text-gray-500"></i>
-                    </div>
+        <!-- right side flex item -->
+        <div class="flex flex-col bg-stone-50 rounded-3xl p-2">
+          <section class="text-center">
+            <nav class="navbar">
+              <div class="md:flex space-x-32 my-8 w-full justify-between px-2">
+                <!-- events -->
+                <div class="flex space-x-2 items-center">
+                  <div class="">
+                    <flex class="flex-col space-y-1"
+                      ><div
+                        class="w-8 h-[3px] rounded-full bg-veryDarkBlue"
+                      ></div>
+                      <div
+                        class="w-6 h-[3px] rounded-full bg-veryDarkBlue"
+                      ></div>
+                      <div
+                        class="w-4 h-[3px] rounded-full bg-veryDarkBlue"
+                      ></div
+                    ></flex>
                   </div>
-                  <div class="flex items-center">
-                    <input
-                      type="text"
-                      placeholder="Filter"
-                      class="rounded-l-full py-2 px-6 w-36 focus:outline-none"
-                    />
-                    <div class="py-2 px-6 bg-white rounded-r-full">
-                      <i class="fas fa-chevron-down text-gray-500"></i>
-                    </div>
-                  </div>
-                </div>
-              </form>
-              <!-- third flex item bell and user profile -->
-              <div class="flex items-center space-x-6">
-                <div class="flex relative">
-                  <i class="fa-solid fa-bell text-white text-xl"></i>
-                  <div
-                    class="h-4 w-4 bg-green-600 rounded-full absolute ml-[11px] -mt-[7px] flex items-center justify-center"
-                  >
-                    <p class="text-white text-xs">5</p>
-                  </div>
+                  <strong class="text-2xl text-veryDarkBlue"> Events </strong>
                 </div>
 
-                <div class="flex relative">
-                  <i class="fa-solid fa-message text-white text-xl"></i>
-                  <div
-                    class="h-4 w-4 bg-green-600 rounded-full absolute ml-[11px] -mt-[7px] flex items-center justify-center"
-                  >
-                    <p class="text-white text-xs">1</p>
-                  </div>
-                </div>
-                <div class="flex relative">
-                  <i class="fa-solid fa-bullhorn text-white text-xl"></i>
-                  <div
-                    class="h-4 w-4 bg-green-600 rounded-full absolute ml-[11px] -mt-[7px] flex items-center justify-center"
-                  >
-                    <p class="text-white text-xs">13</p>
-                  </div>
-                </div>
-                <!-- image flex container -->
-
-                <img
-                  src="images/userImage.jpg"
-                  class="w-14 h-14 rounded-full shadow-lg shadow-white/20"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- Hamburger Button -->
-          </nav>
-        </section>
-        <!-- section for content for the user after login -->
-
-        <!-- FLEX BOX FOR THE BOTTOM CONTENT -->
-        <div class="flex space-x-8 max-w-6xl">
-          <!-- flex column for the left welcome back back message -->
-          <div class="flex flex-col w-1/3">
-            <div class="flex flex-col">
-              <h3 class="text-white text-3xl font-Margarine">
-                Welcome Back Johanis !
-              </h3>
-              <!-- and item flex-col for motivational quote -->
-              <div
-                class="flex flex-col rounded-xl bg-gray-800 p-4 space-y-2 mt-2 shadow-md shadow-white"
-              >
-                <h5 class="text-xl text-white">Your Motivational Quote :</h5>
-                <p class="text-white max-w-sm font-light text-sm">
-                  ‘It does not matter how slowly you go as long as you do not
-                  stop.’ - Confucius
-                </p>
-              </div>
-            </div>
-            <!-- flex item for upcoming classes -->
-            <div class="flex flex-col mt-8">
-              <h3 class="text-white text-3xl font-Margarine">
-                Upcoming Classes
-              </h3>
-              <!-- and item flex-col for motivational quote -->
-              <div
-                class="flex flex-col rounded-xl bg-gray-800 p-4 mt-2 text-white relative"
-              >
-                <!-- teacher flex item -->
-
-                <img
-                  src="images/chemTeacher.jpg"
-                  class="w-14 h-14 rounded-full shadow-lg shadow-white/20 absolute ml-[310px] -mt-12"
-                  alt=""
-                />
-                <!-- first flex item -->
-                <div class="flex items-center justify-between mt-6">
-                  <i
-                    class="fa-solid fa-circle-chevron-left text-white/30 text-2xl hover:text-white transition-all duration-500"
-                  ></i>
-                  <div class="flex text-white items-center">
-                    <h5 class="text-lg font-semibold text-white">Chemistry</h5>
-                    <p>-</p>
-                    <p class="text-PalePink text-sm">Chemical Bonding</p>
-                  </div>
-                  <i
-                    class="fa-solid fa-circle-chevron-right text-white/30 text-2xl hover:text-white transition-all duration-500"
-                  ></i>
-                </div>
-
-                <div class="flex justify-between items-center mt-6">
-                  <div class="flex flex-col space-y-4 justify-start">
-                    <div class="flex space-x-4 items-center">
-                      <i class="far fa-clock"></i>
-                      <div class="flex space-x-2">
-                        <p>0700</p>
-                        <p>-</p>
-                        <p>0730</p>
+                <!-- second flex item for navbar -->
+                <div class="flex items-center space-x-12">
+                  <form action="" class="">
+                    <div class="flex space-x-8">
+                      <!-- flex for search icon and input box -->
+                      <div class="flex items-center">
+                        <input
+                          type="text"
+                          placeholder="Search Files..."
+                          class="rounded-l-full py-2 px-6 w-52 focus:outline-none bg-stone-200 text-gray-900"
+                        />
+                        <div class="py-2 px-6 bg-stone-200 rounded-r-full">
+                          <i class="fas fa-search text-gray-900"></i>
+                        </div>
                       </div>
                     </div>
-                    <div class="flex items-center space-x-4">
-                      <i class="fa fa-calendar"></i>
-                      <p>Lesson 21</p>
+                  </form>
+                  <div class="flex items-center space-x-6">
+                    <div class="flex relative">
+                      <i class="fa-solid fa-bell text-gray-900 text-xl"></i>
+                      <div
+                        class="h-4 w-4 bg-green-600 rounded-full absolute ml-[11px] -mt-[7px] flex items-center justify-center"
+                      >
+                        <p class="text-white text-xs">5</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="flex flex-col space-y-4 justify-start">
-                    <div class="flex items-center space-x-4">
-                      <i class="fa fa-book" aria-hidden="true"></i>
-                      <p>Jgr Briggs</p>
+
+                    <div class="flex relative">
+                      <i
+                        class="fa-solid fa-message text-text-gray-900 text-xl"
+                      ></i>
+                      <div
+                        class="h-4 w-4 bg-green-600 rounded-full absolute ml-[11px] -mt-[7px] flex items-center justify-center"
+                      >
+                        <p class="text-white text-xs">1</p>
+                      </div>
                     </div>
-                    <div class="flex items-center space-x-4">
-                      <i class="fa fa-building" aria-hidden="true"></i>
-                      <p>Class 4B</p>
+                    <div class="flex relative">
+                      <i
+                        class="fa-solid fa-bullhorn text-text-gray-900 text-xl"
+                      ></i>
+                      <div
+                        class="h-4 w-4 bg-green-600 rounded-full absolute ml-[11px] -mt-[7px] flex items-center justify-center"
+                      >
+                        <p class="text-white text-xs">13</p>
+                      </div>
                     </div>
+                    <!-- image flex container -->
+
+                    <img
+                      src="images/userImage.jpg"
+                      class="w-14 h-14 rounded-full shadow-sm shadow-veryDarkBlue"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <strong class="flex justify-start mt-6">Lessons Covered</strong>
-                <!-- progress bar -->
+
+                <!-- third flex item bell and user profile -->
+              </div>
+              <!-- Hamburger Button -->
+            </nav>
+          </section>
+          <!-- section for content for the user after login -->
+
+          <!-- FLEX BOX FOR THE BOTTOM CONTENT -->
+          <div class="flex space-x-12 max-w-6xl px-4">
+            <!-- flex column for the left welcome back back message -->
+            <div class="flex flex-col w-1/3">
+              <div class="flex flex-col">
+                <h3 class="text-veryDarkBlue text-2xl">
+                  Welcome Back Johanis !
+                </h3>
+                <!-- and item flex-col for motivational quote -->
                 <div
-                  class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-[250px] md:w-[320px] p-[2px]"
+                  class="flex flex-col rounded-xl bg-stone-50 text-gray-900 p-4 space-y-2 mt-6 shadow-lg shadow-gray-500"
                 >
-                  <!-- inner progress bar div -->
+                  <h5 class="text-xl">Your Motivational Quote :</h5>
+                  <p class="max-w-sm font-light text-sm">
+                    ‘It does not matter how slowly you go as long as you do not
+                    stop.’ - Confucius
+                  </p>
+                </div>
+              </div>
+              <!-- flex item for upcoming classes -->
+              <div class="flex flex-col mt-10">
+                <!-- and item flex-col for motivational quote -->
+                <div
+                  class="flex flex-col rounded-b-xl rounded-tl-xl bg-white p-4 mt-2 text-white relative shadow-lg shadow-gray-500"
+                >
+                  <!-- teacher flex item -->
+
+                  <img
+                    src="images/chemTeacher.jpg"
+                    class="w-14 h-14 rounded-full shadow-lg shadow-white/20 absolute ml-[290px] -mt-10 z-10"
+                    alt=""
+                  />
+                  <!-- first flex item -->
+                  <strong class="text-xl text-veryDarkBlue">
+                    Upcoming Classes
+                  </strong>
+                  <div class="flex items-center justify-between mt-8">
+                    <i
+                      class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-2xl hover:text-VeryDarkBlue transition-all duration-500"
+                    ></i>
+                    <div class="flex text-white items-center">
+                      <h5 class="text-lg font-semibold text-gray-900">
+                        Chemistry
+                      </h5>
+                      <p class="text-gray-800">-</p>
+                      <p class="text-gray-800 text-sm">Chemical Bonding</p>
+                    </div>
+                    <i
+                      class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-2xl hover:text-VeryDarkBlue transition-all duration-500"
+                    ></i>
+                  </div>
+
                   <div
-                    class="flex justify-end bg-gradient-to-r from-PalePink to-RedshPink rounded-full h-[15px] md:h-[10px] md:w-[100px] w-[100px]"
+                    class="flex justify-between items-center mt-6 text-gray-900"
                   >
-                    <!-- inner dot -->
+                    <div class="flex flex-col space-y-4 justify-start">
+                      <div class="flex space-x-4 items-center">
+                        <i class="far fa-clock"></i>
+                        <div class="flex space-x-2">
+                          <p>0700</p>
+                          <p>-</p>
+                          <p>0730</p>
+                        </div>
+                      </div>
+                      <div class="flex items-center space-x-4">
+                        <i class="fa fa-calendar"></i>
+                        <p>Lesson 21</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col space-y-4 justify-start">
+                      <div class="flex items-center space-x-4">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <p>Jgr Briggs</p>
+                      </div>
+                      <div class="flex items-center space-x-4">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <p>Class 4B</p>
+                      </div>
+                    </div>
+                  </div>
+                  <strong class="flex justify-start text-gray-900 mt-6"
+                    >Lessons Covered</strong
+                  >
+                  <!-- progress bar -->
+                  <div
+                    class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-[250px] md:w-[320px] p-[2px]"
+                  >
+                    <!-- inner progress bar div -->
                     <div
-                      class="bg-white rounded-full h-[12px] w-[12px] md:h-[8px] md:w-[8px] mt-[1px] mr-[1.5px]"
-                    ></div>
+                      class="flex justify-end bg-gradient-to-r from-PalePink to-RedshPink rounded-full h-[15px] md:h-[10px] md:w-[100px] w-[100px]"
+                    >
+                      <!-- inner dot -->
+                      <div
+                        class="bg-white rounded-full h-[12px] w-[12px] md:h-[8px] md:w-[8px] mt-[1px] mr-[1.5px]"
+                      ></div>
+                    </div>
                   </div>
                 </div>
-
-                <!-- next and previous arrows for sliding pictures -->
-
-                <!--  -->
               </div>
+              <!-- flex item for BOOKS -->
+              <div class="flex flex-col mt-2">
+                <!-- and item flex-col for motivational quote -->
+                <div
+                  class="flex flex-col rounded-xl p-2 mt-2 text-white relative"
+                >
+                  <!-- teacher flex item -->
+
+                  <!-- first flex item -->
+
+                  <div class="flex items-center justify-between mt-2">
+                    <h5 class="text-xl font-semibold text-VeryDarkBlue">
+                      Learning Corner
+                    </h5>
+
+                    <div class="flex space-x-8 items-center">
+                      <i
+                        class="fa-solid fa-chevron-left text-VeryDarkBlue text-lg"
+                      ></i>
+                      <i
+                        class="fa-solid fa-chevron-right text-VeryDarkBlue text-lg"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <img
+                      src="images/tambaoga.jpg"
+                      class="w-1/2 h-4/5 rounded-2xl"
+                      alt=""
+                    />
+                    <img
+                      src="images/jgrBriggs.jpeg"
+                      class="w-1/2 h-4/5 rounded-2xl"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- second upcoming class -->
             </div>
-
-            <!-- second upcoming class -->
-          </div>
-          <!-- flex 2/3 for the right side for calendars etc -->
-          <div class="flex flex-col w-2/3 bg-veryDarkBlue rounded-xl p-6">
-            <div class="flex justify-between">
-              <div class="flex flex-col w-2/5 text-white">
-                <strong class="text-xl">Notice Board</strong>
-                <div
-                  class="flex space-x-4 w-full bg-white/10 rounded-lg p-2 items-start backdrop-blur-sm text-white mb-2 mt-4 shadow-2xl"
-                >
-                  <!-- flex column for the balance -->
-                  <div
-                    class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
+            <!-- flex 2/3 for the right side for calendars etc -->
+            <div class="flex flex-col w-2/3 bg-slate-100/40 rounded-xl p-4">
+              <div class="flex justify-between">
+                <div class="flex flex-col w-2/5 text-gray-700">
+                  <strong class="text-xl text-VeryDarkBlue"
+                    >Notice Board</strong
                   >
-                    <img src="images/tch1.jpg " class="rounded-lg" alt="" />
-                  </div>
-                  <div class="flex flex-col space-y-2">
-                    <p class="text-sm max-w-xs text-left">
-                      New prefects are being selected next week. Make sure you
-                      campaign
-                    </p>
-
-                    <p class="text-xs font-light">by - Mr Dhonzamsoro</p>
-                  </div>
-                </div>
-                <!-- second message -->
-                <div
-                  class="flex space-x-4 w-full bg-white/10 rounded-lg p-2 items-start backdrop-blur-sm text-white mb-2 shadow-2xl"
-                >
-                  <!-- flex column for the balance -->
                   <div
-                    class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
+                    class="flex space-x-4 w-full bg-stone-50/10 rounded-lg p-2 items-start backdrop-blur-sm text-gray-900 mb-2 mt-4 shadow-md"
                   >
-                    <img src="images/tch2.jpg " class="rounded-lg" alt="" />
-                  </div>
-                  <div class="flex flex-col space-y-2">
-                    <p class="text-sm max-w-xs text-left">
-                      All form 4 students to go to a seminar in August
-                    </p>
-
-                    <p class="text-xs font-light">by - Mr Magwenzi</p>
-                  </div>
-                </div>
-                <!-- third message -->
-                <div
-                  class="flex space-x-4 w-full bg-white/10 rounded-lg p-2 items-start backdrop-blur-sm text-white mb-2 shadow-2xl"
-                >
-                  <!-- flex column for the balance -->
-                  <div
-                    class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
-                  >
-                    <img src="images/tch3.jpg " class="rounded-lg" alt="" />
-                  </div>
-                  <div class="flex flex-col space-y-2">
-                    <p class="text-sm max-w-xs text-left">
-                      Lost keys recovered from the grounds
-                    </p>
-
-                    <p class="text-xs font-light">by - Mr Chingwachedu</p>
-                  </div>
-                </div>
-                <!-- forth message -->
-                <div
-                  class="flex space-x-4 w-full bg-white/10 rounded-lg p-2 items-start backdrop-blur-sm text-white mb-2 shadow-2xl"
-                >
-                  <!-- flex column for the balance -->
-                  <div
-                    class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
-                  >
-                    <img src="images/tch4.jpg " class="rounded-lg" alt="" />
-                  </div>
-                  <div class="flex flex-col space-y-2">
-                    <p class="text-sm max-w-xs text-left">
-                      General cleaning to be held next week Tuesday
-                    </p>
-
-                    <p class="text-xs font-light">by - Mr Godhamurefu</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- flex item for the right side of notice board-->
-              <div class="flex flex-col w-1/2 text-white">
-                <div
-                  class="flex space-x-8 w-full bg-white/10 rounded-lg p-4 items-start backdrop-blur-sm text-white mb-6 mt-[44px]"
-                >
-                  <!-- flex column for the balance -->
-
-                  <i class="fa-solid fa-award text-7xl text-yellow-400"></i>
-
-                  <div class="flex flex-col space-y-2">
-                    <div class="flex flex-col">
-                      <stong class="text-xl max-w-xs text-left text-gray-400">
-                        You have currently received
-                      </stong>
-                      <div class="flex items-center space-x-2">
-                        <stong
-                          class="text-5xl font-Margarine max-w-xs text-left text-white-400"
-                        >
-                          10 </stong
-                        ><strong
-                          class="text-5xl max-w-xs text-left text-gray-400"
-                          >awards</strong
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- second message -->
-                <div class="flex justify-between space-x-4">
-                  <div class="flex flex-col w-1/3 text-white mb-2 items-start">
-                    <!-- pi chart canvas -->
-
-                    <div class="relative">
-                      <div class="">
-                        <canvas class="w-32" id="progressChart"></canvas>
-                      </div>
-
-                      <strong
-                        class="chart-percentage absolute mb-12 ml-1"
-                        id="percentage-display"
-                      >
-                        0%
-                      </strong>
-                      <strong class="text-xs absolute ml-7 -mt-14"
-                        >Attendance</strong
-                      >
-                    </div>
-
                     <!-- flex column for the balance -->
+                    <div
+                      class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
+                    >
+                      <img src="images/tch1.jpg " class="rounded-lg" alt="" />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-sm max-w-xs text-left">
+                        New prefects are being selected next week. Make sure you
+                        campaign
+                      </p>
+
+                      <p class="text-xs font-light">by - Mr Dhonzamsoro</p>
+                    </div>
+                  </div>
+                  <!-- second message -->
+                  <div
+                    class="flex space-x-4 w-full bg-stone-50/10 rounded-lg p-2 items-start backdrop-blur-sm text-gray-900 mb-2 mt-4 shadow-md"
+                  >
+                    <!-- flex column for the balance -->
+                    <div
+                      class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
+                    >
+                      <img src="images/tch2.jpg " class="rounded-lg" alt="" />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-sm max-w-xs text-left">
+                        All form 4 students to go to a seminar in August
+                      </p>
+
+                      <p class="text-xs font-light">by - Mr Magwenzi</p>
+                    </div>
                   </div>
                   <!-- third message -->
                   <div
-                    class="flex flex-col w-3/5 bg-white/10 rounded-lg p-2 items-start mb-2 relative"
+                    class="flex space-x-4 w-full bg-stone-50/10 rounded-lg p-2 items-start backdrop-blur-sm text-gray-900 mb-2 mt-4 shadow-md"
                   >
-                    <div class="flex items-center space-x-4">
-                      <img src="images/target.png" class="w-1/4" alt="" />
-                      <div class="flex flex-col">
-                        <h5 class="font-semibold text-xl">Set Targets</h5>
-                      </div>
-                    </div>
-                    <p class="text-xs mt-2">
-                      Are you ready to achive some goals? Add new goals which
-                      you want to achieve
-                    </p>
-                    <i
-                      class="fa-solid fa-circle-plus text-2xl absolute ml-[190px] -mt-4 text-gray-400 hover:text-white transition-all duration-500"
-                    ></i>
-
                     <!-- flex column for the balance -->
+                    <div
+                      class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
+                    >
+                      <img src="images/tch3.jpg " class="rounded-lg" alt="" />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-sm max-w-xs text-left">
+                        Lost keys recovered from the grounds
+                      </p>
+
+                      <p class="text-xs font-light">by - Mr Chingwachedu</p>
+                    </div>
+                  </div>
+                  <!-- forth message -->
+                  <div
+                    class="flex space-x-4 w-full bg-stone-50/10 rounded-lg p-2 items-start backdrop-blur-sm text-gray-900 mb-2 mt-4 shadow-md"
+                  >
+                    <!-- flex column for the balance -->
+                    <div
+                      class="w-1/5 h-2/3 max-h-fit bg-white rounded-lg flex-shrink-0"
+                    >
+                      <img src="images/tch4.jpg " class="rounded-lg" alt="" />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-sm max-w-xs text-left">
+                        General cleaning to be held next week Tuesday
+                      </p>
+
+                      <p class="text-xs font-light">by - Mr Godhamurefu</p>
+                    </div>
                   </div>
                 </div>
 
-                <!-- forth message -->
-              </div>
-            </div>
-            <!-- flex col item for chart area -->
-            <div
-              class="w-full h-2/5 bg-white rounded-xl mt-8 px-4 pb-16 pt-4 flex flex-col"
-              id="line-chart-container"
-            >
-              <div class="flex justify-around items-center mb-4">
-                <strong class="">Current Perfomance</strong>
-                <div class="flex text-black items-center space-x-2">
-                  <strong>Subject:</strong>
-                  <strong>Math</strong>
-                </div>
-                <select
-                  id="countries"
-                  class="border rounded-lg p-2.5 focus:outline-none"
-                >
-                  <option selected>Select Subject</option>
-                  <option value="US">Geography</option>
-                  <option value="CA">Woodwork</option>
-                  <option value="FR">Shona</option>
-                  <option value="DE">Science</option>
-                  <option value="DE">Commerce</option>
-                </select>
-              </div>
+                <!-- flex item for the right side of notice board-->
+                <div class="flex flex-col w-1/2 text-white">
+                  <div
+                    class="flex space-x-8 w-full bg-stone-50 rounded-lg p-4 items-start backdrop-blur-sm text-white mb-6 mt-[44px]"
+                  >
+                    <!-- flex column for the balance -->
 
-              <canvas class="" id="lineChart"></canvas>
+                    <i class="fa-solid fa-award text-7xl text-yellow-600"></i>
+
+                    <div class="flex flex-col space-y-2">
+                      <div class="flex flex-col">
+                        <stong class="text-xl max-w-xs text-left text-gray-900">
+                          You have currently received
+                        </stong>
+                        <div class="flex items-center space-x-2">
+                          <stong
+                            class="text-5xl font-Margarine max-w-xs text-left text-black"
+                          >
+                            3 </stong
+                          ><strong
+                            class="text-5xl max-w-xs text-left text-gray-400"
+                            >awards</strong
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- second message -->
+                  <div class="flex justify-between space-x-4">
+                    <div
+                      class="flex flex-col w-1/3 text-white mb-2 items-start"
+                    >
+                      <!-- pi chart canvas -->
+
+                      <div class="relative">
+                        <div class="">
+                          <canvas class="w-32" id="progressChart"></canvas>
+                        </div>
+
+                        <strong
+                          class="chart-percentage absolute mb-12 ml-1 text-gray-900"
+                          id="percentage-display"
+                        >
+                          0%
+                        </strong>
+                        <strong
+                          class="text-xs absolute ml-7 -mt-14 text-gray-900"
+                          >Attendance</strong
+                        >
+                      </div>
+
+                      <!-- flex column for the balance -->
+                    </div>
+                    <!-- third message -->
+                    <div
+                      class="flex flex-col w-3/5 bg-stone-50 rounded-lg p-2 items-start mb-2 relative"
+                    >
+                      <div class="flex items-center space-x-4">
+                        <img src="images/target.png" class="w-1/4" alt="" />
+                        <div class="flex flex-col">
+                          <h5 class="font-semibold text-xl text-gray-900">
+                            Set Targets
+                          </h5>
+                        </div>
+                      </div>
+                      <p class="text-xs mt-2 text-gray-900">
+                        Are you ready to achive some goals? Add new goals which
+                        you want to achieve
+                      </p>
+                      <i
+                        class="fa-solid fa-circle-plus text-2xl absolute ml-[180px] -mt-4 text-gray-500 hover:text-white transition-all duration-500"
+                      ></i>
+
+                      <!-- flex column for the balance -->
+                    </div>
+                  </div>
+
+                  <!-- forth message -->
+                </div>
+              </div>
+              <!-- flex col item for chart area -->
+              <div
+                class="w-full bg-white rounded-xl mt-12 px-4 pt-4 flex flex-col"
+                id="line-chart-container"
+              >
+                <div class="flex justify-around items-center mb-4">
+                  <strong class="">Current Perfomance</strong>
+                  <div class="flex text-black items-center space-x-2">
+                    <strong>Subject:</strong>
+                    <strong>Math</strong>
+                  </div>
+                  <select
+                    id="countries"
+                    class="border rounded-lg p-2.5 focus:outline-none"
+                  >
+                    <option selected>Select Subject</option>
+                    <option value="US">Geography</option>
+                    <option value="CA">Woodwork</option>
+                    <option value="FR">Shona</option>
+                    <option value="DE">Science</option>
+                    <option value="DE">Commerce</option>
+                  </select>
+                </div>
+                <div class="">
+                  <canvas class="h-72" id="lineChart"></canvas>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- flex item for the right side of the notifications -->
         </div>
-        <!-- flex item for the right side of the notifications -->
       </div>
-    </div>
+    </container>
 
     <!-- sidebar -->
   </body>
