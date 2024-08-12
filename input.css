@@ -166,8 +166,9 @@ body {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-/* @media (max-width: 576px) {
-  body {
-    background-image: url("../images/bg-header-mobile.png");
+@media (min-width: 1600px) {
+  .xxl {
+    margin-left: 208px;
+    margin-right: 208px;
   }
-} */
+}

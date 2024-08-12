@@ -2,7 +2,7 @@ const hamBurgerMenuShow = document.querySelector(".hamBurgerShow");
 const SidebarMenu = document.querySelector(".SidebarMenu");
 const btnhamBurger = document.querySelector(".btnhamBurger");
 const addModal = document.querySelector(".modalShow");
-const animated = document.querySelector(".moveback");
+const animated = document.querySelector(".animated");
 
 animated.addEventListener("animationend", function (e) {
   if (e.animationName === "moveback") hamBurgerMenuShow.classList.add("hidden");
