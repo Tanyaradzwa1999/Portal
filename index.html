@@ -22,13 +22,14 @@
   </head>
   <!--  -->
   <body class="md:bg-LightGrayishViolet bg-sky-900/60">
+    <div class="modalShow transition-all duration-500 ease-in-out"></div>
     <container
       class="universal-container my-0 pt-4 md:pt-0 md:my-10 xl:mx-52 md:bg-sky-900/60 bg-transparent xl:px-20 flex justify-center items-center rounded-none md:rounded-3xl"
     >
       <div class="flex my-4 items-start">
         <!-- left side flex item -->
         <div
-          class="section bg-veryDarkBlue w-72 mt-8 px-4 pt-4 pb-32 rounded-3xl h-full hidden md:block"
+          class="section bg-veryDarkBlue lg:w-[297px] mt-8 px-4 pt-4 pb-32 rounded-3xl h-full xl:block xl:relative lg:absolute z-50 hidden hamBurgerShow SidebarMenu moveback"
         >
           <!-- flex item for the side items -->
           <div class="flex flex-col">
@@ -49,10 +50,10 @@
             </div>
             <!-- balances flex item and container -->
             <div
-              class="flex w-full bg-white/10 h-20 rounded-xl p-4 items-center backdrop-blur-sm justify-between"
+              class="flex w-full bg-white/10 h-20 rounded-xl p-4 items-center backdrop-blur-sm justify-between sidebarItem"
             >
               <!-- flex column for the balance -->
-              <div class="flex flex-col">
+              <div class="flex flex-col sidebarItem">
                 <h5 class="text-gray-100 font-thin">Balance</h5>
                 <p class="text-white">ZW 16575.95</p>
               </div>
@@ -66,7 +67,7 @@
             <h5 class="text-white mt-8 text-xl">Main Menu</h5>
             <!-- to dashboard container -->
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4 sidebarItem"
             >
               <!-- flex column for the balance -->
 
@@ -74,7 +75,7 @@
               <p>Dashboard</p>
             </div>
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 sidebarItem"
             >
               <!-- flex column for the balance -->
 
@@ -83,7 +84,7 @@
             </div>
             <!--Assignments  -->
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white sidebarItem"
             >
               <i class="fas fa-tasks"></i>
               <!--  -->
@@ -91,14 +92,14 @@
             </div>
             <!-- library -->
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white sidebarItem"
             >
               <i class="fa-solid fa-book-open"></i>
               <!--  -->
               <p>Resources</p>
             </div>
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 mb-2 text-white sidebarItem"
             >
               <i class="fa-solid fa-sack-dollar"></i>
               <!--  -->
@@ -109,7 +110,7 @@
             <h5 class="text-white mt-8 text-xl">Others</h5>
             <!-- to dashboard container -->
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 mt-4 sidebarItem"
             >
               <!-- flex column for the balance -->
 
@@ -117,7 +118,7 @@
               <p>Social Clubs</p>
             </div>
             <div
-              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2"
+              class="flex w-full bg-white/10 h-14 rounded-xl p-4 items-center backdrop-blur-sm space-x-2 text-white mb-2 sidebarItem"
             >
               <!-- flex column for the balance -->
 
@@ -130,9 +131,11 @@
         <div class="flex flex-col rounded-3xl p-2">
           <section class="text-center">
             <nav class="navbar hidden md:block">
-              <div class="md:flex space-x-32 my-8 w-full justify-between px-2">
+              <div
+                class="md:flex items-center my-8 w-full xl:justify-between pl-6 xl:px-2"
+              >
                 <!-- events -->
-                <div class="flex space-x-2 items-center">
+                <div class="flex space-x-2 items-center order-1 xl:-order-1">
                   <div class="">
                     <flex class="flex-col space-y-1"
                       ><div
@@ -146,11 +149,13 @@
                       ></div
                     ></flex>
                   </div>
-                  <strong class="text-2xl text-veryDarkBlue"> Events </strong>
+                  <strong class="text-xl xl:text-2xl text-veryDarkBlue">
+                    Events
+                  </strong>
                 </div>
 
                 <!-- second flex item for navbar -->
-                <div class="flex items-center space-x-12">
+                <div class="flex items-center space-x-12 mr-48 xl:mr-0">
                   <form action="" class="">
                     <div class="flex space-x-8">
                       <!-- flex for search icon and input box -->
@@ -200,15 +205,22 @@
 
                     <img
                       src="images/userImage.jpg"
-                      class="w-14 h-14 rounded-full shadow-sm shadow-veryDarkBlue"
+                      class="hidden xl:block w-14 h-14 rounded-full shadow-sm shadow-veryDarkBlue"
                       alt=""
                     />
                   </div>
                 </div>
+                <!-- Hamburger Button -->
+                <div class="-order-1 xl:hidden mr-[277px] btnhamBurger">
+                  <flex class="flex-col space-y-1"
+                    ><div class="w-8 h-[3px] rounded-full bg-white"></div>
+                    <div class="w-8 h-[3px] rounded-full bg-white"></div>
+                    <div class="w-8 h-[3px] rounded-full bg-white"></div
+                  ></flex>
+                </div>
 
                 <!-- third flex item bell and user profile -->
               </div>
-              <!-- Hamburger Button -->
             </nav>
           </section>
           <!-- section for content for the user after login -->
@@ -218,16 +230,18 @@
             class="flex flex-col md:flex-row space-y-20 md:space-y-0 space-x-0 md:space-x-12 max-w-sm md:max-w-6xl px-4"
           >
             <!-- flex column for the left welcome back back message -->
-            <div class="flex flex-col w-full md:w-1/3">
+            <div class="flex flex-col w-full lg:w-1/4 xl:w-1/3">
               <div class="flex flex-col">
-                <strong class="text-white md:text-veryDarkBlue text-2xl">
+                <strong
+                  class="text-white md:text-veryDarkBlue text-lg xl:text-2xl"
+                >
                   Welcome Back Johanis !
                 </strong>
                 <!-- and item flex-col for motivational quote -->
                 <div
                   class="flex flex-col rounded-3xl bg-white text-gray-900 p-4 space-y-2 mt-6"
                 >
-                  <h5 class="text-xl font-semibold">
+                  <h5 class="text-base xl:text-xl font-semibold">
                     Your Motivational Quote :
                   </h5>
                   <p class="max-w-sm font-semibold text-sm text-gray-600">
@@ -240,34 +254,47 @@
               <div class="flex flex-col mt-10">
                 <!-- and item flex-col for motivational quote -->
                 <div
-                  class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-4 mt-2 text-white relative"
+                  class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
                 >
                   <!-- teacher flex item -->
 
                   <img
                     src="images/chemTeacher.jpg"
-                    class="w-14 h-14 rounded-full absolute ml-[290px] -mt-10 z-10"
+                    class="w-14 h-14 rounded-full absolute ml-[210px] xl:ml-[290px] -mt-10 z-10"
                     alt=""
                   />
                   <!-- first flex item -->
-                  <strong class="text-xl text-veryDarkBlue">
+                  <strong class="text-base xl:text-2xl text-veryDarkBlue">
                     Upcoming Classes
                   </strong>
-                  <div class="flex items-center justify-between mt-8">
+                  <div
+                    class="flex items-center space-x-1 xl:justify-between mt-8"
+                  >
                     <i
-                      class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-2xl hover:text-VeryDarkBlue transition-all duration-500"
+                      class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500"
                     ></i>
                     <div class="flex text-white items-center">
-                      <h5 class="text-lg font-semibold text-gray-900">
+                      <h5
+                        class="text-sm xl:text-xl font-semibold text-gray-900"
+                      >
                         Chemistry
                       </h5>
                       <p class="text-sm font-semibold text-gray-800">-</p>
-                      <p class="text-sm font-semibold text-gray-800">
-                        Chemical Bonding
-                      </p>
+                      <div class="flex space-x-1">
+                        <p
+                          class="text-xs xl:text-sm font-semibold text-gray-800"
+                        >
+                          Chemical
+                        </p>
+                        <p
+                          class="text-xs xl:text-sm font-semibold text-gray-800"
+                        >
+                          Bonding
+                        </p>
+                      </div>
                     </div>
                     <i
-                      class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-2xl hover:text-VeryDarkBlue transition-all duration-500"
+                      class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500"
                     ></i>
                   </div>
 
@@ -278,24 +305,24 @@
                       <div class="flex space-x-4 items-center">
                         <i class="far fa-clock"></i>
                         <div class="flex space-x-2">
-                          <p>0700</p>
-                          <p>-</p>
-                          <p>0730</p>
+                          <p class="text-sm xl:text-base">0700</p>
+                          <p class="text-sm xl:text-base">-</p>
+                          <p class="text-sm xl:text-base">0730</p>
                         </div>
                       </div>
                       <div class="flex items-center space-x-4">
                         <i class="fa fa-calendar"></i>
-                        <p>Lesson 21</p>
+                        <p class="text-sm xl:text-base">Lesson 21</p>
                       </div>
                     </div>
                     <div class="flex flex-col space-y-4 justify-start">
                       <div class="flex items-center space-x-4">
                         <i class="fa fa-book" aria-hidden="true"></i>
-                        <p>Jgr Briggs</p>
+                        <p class="text-sm xl:text-base">Jgr Briggs</p>
                       </div>
                       <div class="flex items-center space-x-4">
                         <i class="fa fa-building" aria-hidden="true"></i>
-                        <p>Class 4B</p>
+                        <p class="text-sm xl:text-base">Class 4B</p>
                       </div>
                     </div>
                   </div>
@@ -304,7 +331,7 @@
                   >
                   <!-- progress bar -->
                   <div
-                    class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full md:w-[320px] p-[2px]"
+                    class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full p-[2px]"
                   >
                     <!-- inner progress bar div -->
                     <div
@@ -330,17 +357,17 @@
 
                   <div class="flex items-center justify-between mt-20 md:mt-2">
                     <h5
-                      class="text-2xl text-white font-semibold md:text-VeryDarkBlue"
+                      class="text-lg xl:text-2xl text-white font-semibold md:text-VeryDarkBlue"
                     >
                       Learning Corner
                     </h5>
 
                     <div class="flex space-x-8 items-center">
                       <i
-                        class="fa-solid fa-chevron-left text-white md:text-VeryDarkBlue text-lg"
+                        class="fa-solid fa-chevron-left text-white md:text-VeryDarkBlue text-base xl:text-lg"
                       ></i>
                       <i
-                        class="fa-solid fa-chevron-right text-white md:text-VeryDarkBlue text-lg"
+                        class="fa-solid fa-chevron-right text-white md:text-VeryDarkBlue text-base xl:text-lg"
                       ></i>
                     </div>
                   </div>
@@ -594,5 +621,6 @@
   </body>
   <!-- script -->
   <script src="linechart.js"></script>
+  <script src="animation.js"></script>
   <script src="pie_chart.js"></script>
 </html>
