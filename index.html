@@ -24,7 +24,7 @@
   <body class="md:bg-LightGrayishViolet bg-sky-900/60">
     <div class="modalShow transition-all duration-500 ease-in-out"></div>
     <container
-      class="universal-container my-0 pt-4 md:pt-0 md:my-10 md:bg-sky-900/60 bg-transparent flex lg:justify-center items-center rounded-none md:rounded-3xl xxl"
+      class="universal-container my-0 pt-4 md:pt-0 md:my-10 md:bg-sky-900/60 bg-transparent flex lg:justify-center items-center rounded-none md:rounded-3xl xxl shadow-2xl shadow-sky-900/70"
     >
       <div class="flex my-4 items-start">
         <!-- left side flex item -->
@@ -250,101 +250,387 @@
                   </p>
                 </div>
               </div>
-              <!-- flex item for upcoming classes -->
-              <div class="flex flex-col mt-10">
-                <!-- and item flex-col for motivational quote -->
-                <div
-                  class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
-                >
-                  <!-- teacher flex item -->
-
-                  <img
-                    src="images/chemTeacher.jpg"
-                    class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
-                    alt=""
-                  />
-                  <!-- first flex item -->
-                  <strong class="text-base xl:text-2xl text-veryDarkBlue">
-                    Upcoming Classes
-                  </strong>
+              <!-- flex item for upcoming classes SLIDESSSSSSS -->
+              <div class="flex items-center slider sliderContainer">
+                <div class="flex flex-col mt-10 slide">
+                  <!-- and item flex-col for motivational quote -->
                   <div
-                    class="flex items-center space-x-1 xl:justify-between mt-8"
+                    class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
                   >
-                    <i
-                      class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500"
-                    ></i>
-                    <div class="flex text-white items-center">
-                      <h5
-                        class="text-sm xl:text-xl font-semibold text-gray-900"
-                      >
-                        Chemistry
-                      </h5>
-                      <p class="text-sm font-semibold text-gray-800">-</p>
-                      <div class="flex space-x-1">
-                        <p
-                          class="text-xs xl:text-sm font-semibold text-gray-800"
-                        >
-                          Chemical
-                        </p>
-                        <p
-                          class="text-xs xl:text-sm font-semibold text-gray-800"
-                        >
-                          Bonding
-                        </p>
-                      </div>
-                    </div>
-                    <i
-                      class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500"
-                    ></i>
-                  </div>
+                    <!-- teacher flex item -->
 
-                  <div
-                    class="flex justify-between items-center mt-6 text-gray-900"
-                  >
-                    <div class="flex flex-col space-y-4 justify-start">
-                      <div class="flex space-x-4 items-center">
-                        <i class="far fa-clock"></i>
-                        <div class="flex space-x-2">
-                          <p class="text-sm xl:text-base">0700</p>
-                          <p class="text-sm xl:text-base">-</p>
-                          <p class="text-sm xl:text-base">0730</p>
+                    <img
+                      src="images/chemTeacher.jpg"
+                      class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
+                      alt=""
+                    />
+                    <!-- first flex item -->
+                    <strong class="text-base xl:text-2xl text-veryDarkBlue">
+                      Upcoming Classes
+                    </strong>
+                    <div
+                      class="flex items-center space-x-1 xl:justify-between mt-8"
+                    >
+                      <i
+                        class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnLeft"
+                      ></i>
+                      <div class="flex text-white items-center">
+                        <h5
+                          class="text-sm xl:text-xl font-semibold text-gray-900"
+                        >
+                          Chemistry
+                        </h5>
+                        <p class="text-sm font-semibold text-gray-800">-</p>
+                        <div class="flex space-x-1">
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Chemical
+                          </p>
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Bonding
+                          </p>
                         </div>
                       </div>
-                      <div class="flex items-center space-x-4">
-                        <i class="fa fa-calendar"></i>
-                        <p class="text-sm xl:text-base">Lesson 21</p>
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnRight"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="flex justify-between items-center mt-6 text-gray-900"
+                    >
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex space-x-4 items-center">
+                          <i class="far fa-clock"></i>
+                          <div class="flex space-x-2">
+                            <p class="text-sm xl:text-base">0700</p>
+                            <p class="text-sm xl:text-base">-</p>
+                            <p class="text-sm xl:text-base">0730</p>
+                          </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-calendar"></i>
+                          <p class="text-sm xl:text-base">Lesson 21</p>
+                        </div>
+                      </div>
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Jgr Briggs</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-building" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Class 4B</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col space-y-4 justify-start">
-                      <div class="flex items-center space-x-4">
-                        <i class="fa fa-book" aria-hidden="true"></i>
-                        <p class="text-sm xl:text-base">Jgr Briggs</p>
-                      </div>
-                      <div class="flex items-center space-x-4">
-                        <i class="fa fa-building" aria-hidden="true"></i>
-                        <p class="text-sm xl:text-base">Class 4B</p>
+                    <strong class="flex justify-start text-gray-900 mt-6"
+                      >Lessons Covered</strong
+                    >
+                    <!-- progress bar -->
+                    <div
+                      class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full p-[2px]"
+                    >
+                      <!-- inner progress bar div -->
+                      <div
+                        class="flex justify-end bg-white rounded-full h-[15.5px] md:h-[10.5px] md:w-[100px] w-[100px]"
+                      >
+                        <!-- inner dot -->
+                        <div
+                          class="bg-black rounded-full h-[12.5px] w-[12.5px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
+                        ></div>
                       </div>
                     </div>
                   </div>
-                  <strong class="flex justify-start text-gray-900 mt-6"
-                    >Lessons Covered</strong
-                  >
-                  <!-- progress bar -->
+                  <!-- slide end -->
+                </div>
+                <div class="flex flex-col slide mt-10">
+                  <!-- and item flex-col for motivational quote -->
                   <div
-                    class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full p-[2px]"
+                    class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
                   >
-                    <!-- inner progress bar div -->
+                    <!-- teacher flex item -->
+
+                    <img
+                      src="images/chemTeacher.jpg"
+                      class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
+                      alt=""
+                    />
+                    <!-- first flex item -->
+                    <strong class="text-base xl:text-2xl text-veryDarkBlue">
+                      Upcoming Classes
+                    </strong>
                     <div
-                      class="flex justify-end bg-white rounded-full h-[15.5px] md:h-[10.5px] md:w-[100px] w-[100px]"
+                      class="flex items-center space-x-1 xl:justify-between mt-8"
                     >
-                      <!-- inner dot -->
+                      <i
+                        class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnLeft"
+                      ></i>
+                      <div class="flex text-white items-center">
+                        <h5
+                          class="text-sm xl:text-xl font-semibold text-gray-900"
+                        >
+                          Chemistry
+                        </h5>
+                        <p class="text-sm font-semibold text-gray-800">-</p>
+                        <div class="flex space-x-1">
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Chemical
+                          </p>
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Bonding
+                          </p>
+                        </div>
+                      </div>
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnRight"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="flex justify-between items-center mt-6 text-gray-900"
+                    >
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex space-x-4 items-center">
+                          <i class="far fa-clock"></i>
+                          <div class="flex space-x-2">
+                            <p class="text-sm xl:text-base">0700</p>
+                            <p class="text-sm xl:text-base">-</p>
+                            <p class="text-sm xl:text-base">0730</p>
+                          </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-calendar"></i>
+                          <p class="text-sm xl:text-base">Lesson 21</p>
+                        </div>
+                      </div>
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Jgr Briggs</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-building" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Class 4B</p>
+                        </div>
+                      </div>
+                    </div>
+                    <strong class="flex justify-start text-gray-900 mt-6"
+                      >Lessons Covered</strong
+                    >
+                    <!-- progress bar -->
+                    <div
+                      class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full p-[2px]"
+                    >
+                      <!-- inner progress bar div -->
                       <div
-                        class="bg-black rounded-full h-[12.5px] w-[12.5px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
-                      ></div>
+                        class="flex justify-end bg-white rounded-full h-[15.5px] md:h-[10.5px] md:w-[100px] w-[100px]"
+                      >
+                        <!-- inner dot -->
+                        <div
+                          class="bg-black rounded-full h-[12.5px] w-[12.5px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col slide mt-10">
+                  <!-- and item flex-col for motivational quote -->
+                  <div
+                    class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                  >
+                    <!-- teacher flex item -->
+
+                    <img
+                      src="images/chemTeacher.jpg"
+                      class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
+                      alt=""
+                    />
+                    <!-- first flex item -->
+                    <strong class="text-base xl:text-2xl text-veryDarkBlue">
+                      Upcoming Classes
+                    </strong>
+                    <div
+                      class="flex items-center space-x-1 xl:justify-between mt-8"
+                    >
+                      <i
+                        class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnLeft"
+                      ></i>
+                      <div class="flex text-white items-center">
+                        <h5
+                          class="text-sm xl:text-xl font-semibold text-gray-900"
+                        >
+                          Chemistry
+                        </h5>
+                        <p class="text-sm font-semibold text-gray-800">-</p>
+                        <div class="flex space-x-1">
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Chemical
+                          </p>
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Bonding
+                          </p>
+                        </div>
+                      </div>
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnRight"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="flex justify-between items-center mt-6 text-gray-900"
+                    >
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex space-x-4 items-center">
+                          <i class="far fa-clock"></i>
+                          <div class="flex space-x-2">
+                            <p class="text-sm xl:text-base">0700</p>
+                            <p class="text-sm xl:text-base">-</p>
+                            <p class="text-sm xl:text-base">0730</p>
+                          </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-calendar"></i>
+                          <p class="text-sm xl:text-base">Lesson 21</p>
+                        </div>
+                      </div>
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Jgr Briggs</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-building" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Class 4B</p>
+                        </div>
+                      </div>
+                    </div>
+                    <strong class="flex justify-start text-gray-900 mt-6"
+                      >Lessons Covered</strong
+                    >
+                    <!-- progress bar -->
+                    <div
+                      class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full p-[2px]"
+                    >
+                      <!-- inner progress bar div -->
+                      <div
+                        class="flex justify-end bg-white rounded-full h-[15.5px] md:h-[10.5px] md:w-[100px] w-[100px]"
+                      >
+                        <!-- inner dot -->
+                        <div
+                          class="bg-black rounded-full h-[12.5px] w-[12.5px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col slide mt-10">
+                  <!-- and item flex-col for motivational quote -->
+                  <div
+                    class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                  >
+                    <!-- teacher flex item -->
+
+                    <img
+                      src="images/chemTeacher.jpg"
+                      class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
+                      alt=""
+                    />
+                    <!-- first flex item -->
+                    <strong class="text-base xl:text-2xl text-veryDarkBlue">
+                      Upcoming Classes
+                    </strong>
+                    <div
+                      class="flex items-center space-x-1 xl:justify-between mt-8"
+                    >
+                      <i
+                        class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnLeft"
+                      ></i>
+                      <div class="flex text-white items-center">
+                        <h5
+                          class="text-sm xl:text-xl font-semibold text-gray-900"
+                        >
+                          Chemistry
+                        </h5>
+                        <p class="text-sm font-semibold text-gray-800">-</p>
+                        <div class="flex space-x-1">
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Chemical
+                          </p>
+                          <p
+                            class="text-xs xl:text-sm font-semibold text-gray-800"
+                          >
+                            Bonding
+                          </p>
+                        </div>
+                      </div>
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnRight"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="flex justify-between items-center mt-6 text-gray-900"
+                    >
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex space-x-4 items-center">
+                          <i class="far fa-clock"></i>
+                          <div class="flex space-x-2">
+                            <p class="text-sm xl:text-base">0700</p>
+                            <p class="text-sm xl:text-base">-</p>
+                            <p class="text-sm xl:text-base">0730</p>
+                          </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-calendar"></i>
+                          <p class="text-sm xl:text-base">Lesson 21</p>
+                        </div>
+                      </div>
+                      <div class="flex flex-col space-y-4 justify-start">
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Jgr Briggs</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                          <i class="fa fa-building" aria-hidden="true"></i>
+                          <p class="text-sm xl:text-base">Class 4B</p>
+                        </div>
+                      </div>
+                    </div>
+                    <strong class="flex justify-start text-gray-900 mt-6"
+                      >Lessons Covered</strong
+                    >
+                    <!-- progress bar -->
+                    <div
+                      class="my-2 bg-VeryDarkBlue rounded-full h-[20px] md:h-[15px] w-full p-[2px]"
+                    >
+                      <!-- inner progress bar div -->
+                      <div
+                        class="flex justify-end bg-white rounded-full h-[15.5px] md:h-[10.5px] md:w-[100px] w-[100px]"
+                      >
+                        <!-- inner dot -->
+                        <div
+                          class="bg-black rounded-full h-[12.5px] w-[12.5px] md:h-[8.8px] md:w-[8.8px] mt-[1px] mr-[1.5px]"
+                        ></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <!-- flex item for BOOKS -->
               <div class="flex flex-col mt-2">
                 <!-- and item flex-col for motivational quote -->
