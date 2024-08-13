@@ -118,43 +118,122 @@ body {
 }
 
 /* animations */
-.linear {
-  width: 20px;
-  //height: 50px;
+@media (max-width: 1440px) {
+  .linear {
+    width: 20px;
+    //height: 50px;
 
-  position: relative;
-  animation: mymove 0.6s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+    position: relative;
+    animation: mymoveSidebar 0.6s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .moveback {
+    width: 20px;
+    //height: 50px;
+
+    position: relative;
+    animation: moveback 0.6s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes moveback {
+    from {
+      left: -1px;
+    }
+    to {
+      left: -400px;
+    }
+  }
+  @keyframes mymoveSidebar {
+    from {
+      left: -400px;
+    }
+    to {
+      left: -1px;
+    }
+  }
 }
-.moveback {
-  width: 20px;
+.linearPic {
+  //width: 100%;
   //height: 50px;
 
   position: relative;
-  animation: moveback 0.6s;
+  animation: mymove 0.5s;
   animation-delay: 0s;
   animation-fill-mode: backwards;
   animation-timing-function: linear;
 }
-
-@keyframes moveback {
-  from {
-    left: -1px;
-  }
-  to {
-    left: -400px;
-  }
-}
 @keyframes mymove {
-  from {
-    left: -400px;
+  0% {
+    right: -250px;
+    z-index: -1;
+    scale: 0.6;
+    opacity: 0;
   }
-  to {
-    left: -1px;
+  20% {
+    right: -200px;
+    scale: 0.7;
+    z-index: 1;
+  }
+  40% {
+    right: -150px;
+    z-index: 1;
+    scale: 0.8;
+  }
+  60% {
+    right: -100px;
+    scale: 0.9;
+  }
+  80% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
   }
 }
+.linearSlideLeft {
+  //width: 100%;
+  //height: 50px;
+
+  position: relative;
+  animation: mymoveLeft 0.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes mymoveLeft {
+  0% {
+    left: -250px;
+    z-index: -1;
+    scale: 0.6;
+    opacity: 0;
+  }
+  20% {
+    left: -200px;
+    scale: 0.7;
+    z-index: 1;
+  }
+  40% {
+    left: -150px;
+    z-index: 1;
+    scale: 0.8;
+  }
+  60% {
+    left: -100px;
+    scale: 0.9;
+  }
+  80% {
+    left: -50px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 .modal {
   position: fixed; /* Stay in place */
   z-index: 50; /* Sit on top */

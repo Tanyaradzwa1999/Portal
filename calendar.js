@@ -13,18 +13,18 @@ const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 
 const months = [
-  "January",
-  "February",
+  "Jan",
+  "Feb",
   "March",
   "April",
   "May",
   "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 
 const today = new Date();

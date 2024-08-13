@@ -9,31 +9,90 @@ const sliderBtnLeft = document.querySelectorAll(".sliderBtnLeft");
 const sliderBtnRight = document.querySelectorAll(".sliderBtnRight");
 const sliderContainer = document.querySelector(".sliderContainer");
 let slideStep = 0;
+let slideNumber = 0;
+let prevLeft = false;
+let prevRight = false;
+let resetLeft = false;
+// sliding slides
 sliderContainer.addEventListener("click", function (e) {
-  const clicked = e.target.closest(".sliderBtnLeft");
-
-  slideStep -= 300;
-  if (!clicked) return;
-  if (Math.abs(slideStep) >= 300 * slides.length) {
-    console.log("End");
-    sliderContainer.style.transform = `translateX(${10}px)`;
-    slideStep = 0;
-    return;
+  const clickedRight = e.target.closest(".sliderBtnRight");
+  const clickedLeft = e.target.closest(".sliderBtnLeft");
+  const slide = e.target.closest(".slide");
+  console.log(slideNumber);
+  //check left or right button
+  if (!clickedRight && !clickedLeft) return;
+  if (!slide) return;
+  if (clickedRight) {
+    // remofe right side animes
+    slides.forEach((s) => {
+      s.classList.remove("linearSlideLeft");
+    });
+    prevRight = true;
+    //hide previous slide
+    slide.classList.add("hidden");
+    //check clicked button before adding
+    if (!prevLeft) {
+      slideNumber += 1;
+    }
+    if (resetLeft) {
+      slideNumber = 0;
+      resetLeft = false;
+    }
+    prevLeft = false;
+    if (slideNumber >= slides.length) {
+      slideNumber = 0;
+      console.log(`restarted RIGHT  show slide number ${slideNumber}`);
+      slides[0].classList.remove("hidden");
+      slides[0].classList.add("linearPic");
+      return;
+    }
+    slides.forEach((s, i) => {
+      if (slideNumber == i) {
+        console.log(`show slide number for RIGHT ${i}`);
+        s.classList.remove("hidden");
+        s.classList.add("linearPic");
+      }
+    });
   }
-  sliderContainer.style.transform = `translateX(${slideStep}px)`;
+  // slide to previous picture
+  if (clickedLeft) {
+    //hide clicked slide
+    slides.forEach((s) => {
+      s.classList.remove("linearPic");
+    });
+    prevLeft = true;
+    slide.classList.add("hidden");
+    //check clicked button before subtracting
+    if (!prevRight) {
+      prevRight = false;
+      slideNumber -= 1;
+    }
+    prevRight = false;
+    if (slideNumber < 0) {
+      slideNumber = slides.length - 1; //the last slide was popped already
+      resetLeft = true;
+      console.log(`restarted left show slide number ${slideNumber}`);
+      slides[slides.length - 1].classList.remove("hidden");
+      slides[slides.length - 1].classList.add("linearSlideLeft");
+      return;
+    }
+    slides.forEach((s, i) => {
+      if (slideNumber == i) {
+        console.log(`show slide number for left ${i}`);
+        s.classList.remove("hidden");
+        s.classList.add("linearSlideLeft");
+      }
+    });
+  }
 });
 
 // sliderBtnRight.forEach((s) =>
 //   s.addEventListener("click", function () {
 //     curSlide++;
-//     slides.forEach((s, i) => {
-//       s.style.transform = `translateX(${(i - curSlide) * 20}%)`;
-//     });
+//
 //   })
 // );
-slides.forEach((s, i) => {
-  s.style.transform = `translateX(${20 * i}%)`;
-});
+
 animated.addEventListener("animationend", function (e) {
   if (e.animationName === "moveback") hamBurgerMenuShow.classList.add("hidden");
 });

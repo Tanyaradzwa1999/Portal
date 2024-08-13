@@ -719,24 +719,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
+.ml-12 {
+  margin-left: 3rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.-mt-20 {
+  margin-top: -5rem;
 }
 
-.-mt-16 {
-  margin-top: -4rem;
-}
-
-.ml-\[136px\] {
-  margin-left: 136px;
+.ml-\[180px\] {
+  margin-left: 180px;
 }
 
 .-mt-6 {
@@ -815,10 +819,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mt-60 {
   margin-top: 15rem;
 }
@@ -829,54 +829,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-14 {
-  margin-left: 3.5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
-}
-
-.-mt-20 {
-  margin-top: -5rem;
-}
-
-.ml-\[200px\] {
-  margin-left: 200px;
-}
-
-.ml-\[180px\] {
-  margin-left: 180px;
-}
-
-.-mt-4 {
-  margin-top: -1rem;
-}
-
-.-mt-7 {
-  margin-top: -1.75rem;
-}
-
-.-mt-5 {
-  margin-top: -1.25rem;
 }
 
 .block {
@@ -1113,12 +1065,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20%;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-\[151px\] {
-  width: 151px;
+.w-\[178px\] {
+  width: 178px;
 }
 
 .w-28 {
@@ -1145,26 +1093,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-\[161px\] {
-  width: 161px;
-}
-
-.w-\[171px\] {
-  width: 171px;
-}
-
-.w-\[180px\] {
-  width: 180px;
-}
-
-.w-\[178px\] {
-  width: 178px;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1173,8 +1101,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 36rem;
 }
 
-.max-w-sm {
-  max-width: 24rem;
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-xs {
@@ -1185,12 +1113,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 42rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.max-w-sm {
+  max-width: 24rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .max-w-6xl {
@@ -1207,10 +1135,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.scroll-ml-3 {
-  scroll-margin-left: 0.75rem;
 }
 
 .flex-col {
@@ -2009,9 +1933,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(229 57% 11% / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
+.text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-slate-500 {
@@ -2029,14 +1953,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(208 79 34 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-softRed {
   --tw-text-opacity: 1;
   color: hsl(0 94% 66% / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
@@ -2110,6 +2034,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
 }
 
 .delay-200 {
@@ -2268,26 +2196,82 @@ body {
 
 /* animations */
 
-.linear {
-  width: 20px;
-  //height: 50px;
-  position: relative;
-  -webkit-animation: mymove 0.6s;
-          animation: mymove 0.6s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+@media (max-width: 1440px) {
+  .linear {
+    width: 20px;
+    //height: 50px;
+    position: relative;
+    -webkit-animation: mymoveSidebar 0.6s;
+            animation: mymoveSidebar 0.6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+
+  .moveback {
+    width: 20px;
+    //height: 50px;
+    position: relative;
+    -webkit-animation: moveback 0.6s;
+            animation: moveback 0.6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes moveback {
+    from {
+      left: -1px;
+    }
+
+    to {
+      left: -400px;
+    }
+  }
+
+  @keyframes moveback {
+    from {
+      left: -1px;
+    }
+
+    to {
+      left: -400px;
+    }
+  }
+
+  @-webkit-keyframes mymoveSidebar {
+    from {
+      left: -400px;
+    }
+
+    to {
+      left: -1px;
+    }
+  }
+
+  @keyframes mymoveSidebar {
+    from {
+      left: -400px;
+    }
+
+    to {
+      left: -1px;
+    }
+  }
 }
 
-.moveback {
-  width: 20px;
+.linearPic {
+  //width: 100%;
   //height: 50px;
   position: relative;
-  -webkit-animation: moveback 0.6s;
-          animation: moveback 0.6s;
+  -webkit-animation: mymove 0.5s;
+          animation: mymove 0.5s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-fill-mode: backwards;
@@ -2296,43 +2280,153 @@ body {
           animation-timing-function: linear;
 }
 
-@-webkit-keyframes moveback {
-  from {
-    left: -1px;
-  }
-
-  to {
-    left: -400px;
-  }
-}
-
-@keyframes moveback {
-  from {
-    left: -1px;
-  }
-
-  to {
-    left: -400px;
-  }
-}
-
 @-webkit-keyframes mymove {
-  from {
-    left: -400px;
+  0% {
+    right: -250px;
+    z-index: -1;
+    scale: 0.6;
+    opacity: 0;
   }
 
-  to {
-    left: -1px;
+  20% {
+    right: -200px;
+    scale: 0.7;
+    z-index: 1;
+  }
+
+  40% {
+    right: -150px;
+    z-index: 1;
+    scale: 0.8;
+  }
+
+  60% {
+    right: -100px;
+    scale: 0.9;
+  }
+
+  80% {
+    right: -50px;
+  }
+
+  100% {
+    right: 0px;
   }
 }
 
 @keyframes mymove {
-  from {
-    left: -400px;
+  0% {
+    right: -250px;
+    z-index: -1;
+    scale: 0.6;
+    opacity: 0;
   }
 
-  to {
-    left: -1px;
+  20% {
+    right: -200px;
+    scale: 0.7;
+    z-index: 1;
+  }
+
+  40% {
+    right: -150px;
+    z-index: 1;
+    scale: 0.8;
+  }
+
+  60% {
+    right: -100px;
+    scale: 0.9;
+  }
+
+  80% {
+    right: -50px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+.linearSlideLeft {
+  //width: 100%;
+  //height: 50px;
+  position: relative;
+  -webkit-animation: mymoveLeft 0.5s;
+          animation: mymoveLeft 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes mymoveLeft {
+  0% {
+    left: -250px;
+    z-index: -1;
+    scale: 0.6;
+    opacity: 0;
+  }
+
+  20% {
+    left: -200px;
+    scale: 0.7;
+    z-index: 1;
+  }
+
+  40% {
+    left: -150px;
+    z-index: 1;
+    scale: 0.8;
+  }
+
+  60% {
+    left: -100px;
+    scale: 0.9;
+  }
+
+  80% {
+    left: -50px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes mymoveLeft {
+  0% {
+    left: -250px;
+    z-index: -1;
+    scale: 0.6;
+    opacity: 0;
+  }
+
+  20% {
+    left: -200px;
+    scale: 0.7;
+    z-index: 1;
+  }
+
+  40% {
+    left: -150px;
+    z-index: 1;
+    scale: 0.8;
+  }
+
+  60% {
+    left: -100px;
+    scale: 0.9;
+  }
+
+  80% {
+    left: -50px;
+  }
+
+  100% {
+    left: 0px;
   }
 }
 
@@ -2543,9 +2637,9 @@ body {
   color: hsl(229 57% 11% / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
+.hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .hover\:text-softRed:hover {
@@ -2553,19 +2647,9 @@ body {
   color: hsl(0 94% 66% / var(--tw-text-opacity));
 }
 
-.hover\:text-gray-900:hover {
+.hover\:text-white:hover {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-80:hover {
@@ -2874,10 +2958,10 @@ body {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(3rem * var(--tw-space-x-reverse));
-    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2908,24 +2992,6 @@ body {
     --tw-space-x-reverse: 0;
     margin-right: calc(3.5rem * var(--tw-space-x-reverse));
     margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(4rem * var(--tw-space-x-reverse));
-    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:self-start {
@@ -3065,24 +3131,12 @@ body {
     display: none;
   }
 
-  .xl\:w-1\/3 {
-    width: 33.333333%;
-  }
-
-  .xl\:w-72 {
-    width: 18rem;
-  }
-
   .xl\:w-1\/4 {
     width: 25%;
   }
 
-  .xl\:w-1\/5 {
-    width: 20%;
-  }
-
-  .xl\:w-3\/12 {
-    width: 25%;
+  .xl\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .xl\:justify-between {
