@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="student_portal.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Background Image */
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://varthana.com/school/wp-content/uploads/2024/04/B869-School.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .jumbotron {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Student Portal</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="myInfoDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              My Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="myInfoDropdown">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="#">Account Settings</a>
+              <a class="dropdown-item" href="#">Notifications</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="financialInfoDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Financial Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="financialInfoDropdown">
+              <a class="dropdown-item" href="#">Tuition Fees</a>
+              <a class="dropdown-item" href="#">Scholarships</a>
+              <a class="dropdown-item" href="#">Financial Aid</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="studyInfoDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Study Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="studyInfoDropdown">
+              <a class="dropdown-item" href="#">Courses</a>
+              <a class="dropdown-item" href="results.html">Results</a>
+              <a class="dropdown-item" href="#">Schedule</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron bg-transparent text-light text-center">
+      <h1 class="display-4">Welcome to the Student Portal</h1>
+      <p class="lead">Your gateway to academic success.</p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card mb-3">
+            <div class="card-header">Announcements 📢</div>
+            <div class="card-body">
+              <p>No announcements at the moment.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">Upcoming Events</div>
+            <div class="card-body">
+              <p>No upcoming events.</p>
+            </div>
+          </div>
+          <div>
+            <div class="calendar-container mb-3">
+              <div class="calendar-date">
+                <div class="date">31</div>
+                <div class="month-year">MAY - 2024</div>
+                <button
+                  id="reset"
+                  class="reset-button btn btn-outline-secondary btn-sm"
+                >
+                  RESET
+                </button>
+              </div>
+              <div class="calendar-body">
+                <div class="calendar-nav d-flex justify-content-between">
+                  <button
+                    id="prev"
+                    class="nav-button btn btn-outline-secondary btn-sm"
+                  >
+                    &lt;
+                  </button>
+                  <div id="month-year" class="month-year">MAY - 2024</div>
+                  <button
+                    id="next"
+                    class="nav-button btn btn-outline-secondary btn-sm"
+                  >
+                    &gt;
+                  </button>
+                </div>
+                <div class="calendar-weekdays d-flex justify-content-around">
+                  <div>Sun</div>
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                </div>
+                <div class="calendar-days">
+                  <!-- Calendar days will be inserted here dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">Feedback</div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="feedback">Share your feedback:</label>
+                  <textarea
+                    class="form-control"
+                    id="feedback"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-header">Quick Links</div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="courses.html">Courses</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="results.html">Results</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="profile.html">Profile</a>
+                </li>
+                <li class="list-group-item"><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">Motivational Quote</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  "Success is not final, failure is not fatal: It is the courage
+                  to continue that counts." - Winston Churchill
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">Multimedia</div>
+            <div class="card-body">
+              <!-- Add videos, podcasts, or other multimedia content here -->
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Share on Social Media</div>
+            <div class="card-body">
+              <!-- Add social media sharing buttons here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="student_portal.js"></script>
+    <script src="calendar.js"></script>
+  </body>
+</html>

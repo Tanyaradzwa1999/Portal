@@ -13,10 +13,50 @@
     </p>
 
     <!-- <div class="linear modal" id="div1">linear</div> -->
-    <div id="myModal" class="modal">mo</div>
-    <div id="div2">ease</div>
-    <div id="div3">ease-in</div>
-    <div id="div4">ease-out</div>
-    <div id="div5">ease-in-out</div>
+
+    <div>
+      <div class="calendar-container mb-3">
+        <div class="calendar-date">
+          <div class="date">31</div>
+          <div class="month-year">MAY - 2024</div>
+          <button
+            id="reset"
+            class="reset-button btn btn-outline-secondary btn-sm"
+          >
+            RESET
+          </button>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-nav d-flex justify-content-between">
+            <button
+              id="prev"
+              class="nav-button btn btn-outline-secondary btn-sm"
+            >
+              &lt;
+            </button>
+            <div id="month-year" class="month-year">MAY - 2024</div>
+            <button
+              id="next"
+              class="nav-button btn btn-outline-secondary btn-sm"
+            >
+              &gt;
+            </button>
+          </div>
+          <div class="calendar-weekdays d-flex justify-content-around">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="calendar-days">
+            <!-- Calendar days will be inserted here dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="calendar.js"></script>
 </html>
