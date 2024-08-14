@@ -21,7 +21,7 @@
     <title>Document</title>
   </head>
   <!--bg-sky-900/60  -->
-  <body class="bg-VeryDarkBlue overflow-hidden">
+  <body class="bg-VeryDarkBlue">
     <div class="modalShow transition-all duration-500 ease-in-out"></div>
     <container
       class="universal-container my-0 md:pt-0 bg-transparent flex max-w-full lg:justify-center items-center rounded-none md:rounded-3xl xxl shadow-sky-900/70 mt-10"
@@ -29,7 +29,7 @@
       <div class="flex items-start">
         <!-- left side flex item -->
         <div
-          class="section shadow-sm shadow-white/20 md:w-[297px] px-4 pt-4 pb-20 rounded-3xl h-full xl:block xl:relative ml-6 hidden md:absolute z-50 animated hamBurgerShow SidebarMenu"
+          class="section shadow-sm shadow-white/20 w-[250px] md:w-[300px] px-4 pt-4 pb-20 rounded-3xl h-full xl:block xl:relative ml-6 hidden md:absolute z-50 animated hamBurgerShow SidebarMenu"
         >
           <!-- flex item for the side items -->
           <div class="flex flex-col">
@@ -220,7 +220,7 @@
 
           <!-- FLEX BOX FOR THE BOTTOM CONTENT -->
           <div
-            class="flex flex-col md:flex-row space-y-20 md:space-y-0 space-x-0 md:space-x-12 max-w-sm md:max-w-6xl px-4 mt-6"
+            class="flex flex-col md:flex-row space-y-20 md:space-y-0 space-x-0 md:space-x-12 max-w-7xl px-4 mt-6"
           >
             <!-- flex column for the left welcome back back message -->
             <div class="flex flex-col w-full md:w-1/4 xl:w-1/3">
@@ -376,10 +376,11 @@
                     <!-- NOTICE BOARD FLEX COLUMN -->
                     <!-- UPCOMING CLASSES -->
                     <div class="flex items-center slider sliderContainer mb-4">
-                      <div class="flex flex-col slide">
+                      <!-- FLEX COL FOR UPCOMING CLASSSES CONTAINER -->
+                      <div class="flex flex-col slide w-full">
                         <!-- and item flex-col for motivational quote -->
                         <div
-                          class="flex flex-col rounded-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                          class="flex w-full flex-col rounded-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
                         >
                           <!-- teacher flex item -->
 
@@ -389,9 +390,7 @@
                           >
                             Upcoming Classes
                           </strong>
-                          <div
-                            class="flex items-center space-x-1 xl:justify-between mt-4"
-                          >
+                          <div class="flex items-center justify-between mt-4">
                             <i
                               class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnLeft"
                             ></i>
@@ -778,7 +777,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="flex items-center space-x-2">
+                    <!-- SET TARGETS AND PROGRESS  -->
+                    <div class="flex items-center space-x-2 md:justify-between">
                       <div
                         class="flex justify-between space-x-4 bg-white rounded-3xl"
                       >
@@ -826,7 +826,7 @@
                           time.
                         </p>
                         <i
-                          class="fa-solid fa-circle-plus text-2xl absolute bg-white rounded-full ml-[148px] -mt-6 text-gray-500 hover:text-white transition-all duration-500"
+                          class="fa-solid fa-circle-plus text-2xl absolute bg-white rounded-full ml-[148px] xl:ml-[160px] -mt-6 text-gray-500 hover:text-white transition-all duration-500"
                         ></i>
                       </div>
                     </div>
@@ -944,7 +944,7 @@
                       >Upcoming Events</strong
                     >
 
-                    <div class="flex space-x-2 mt-4">
+                    <div class="flex space-x-2 w-full md:justify-between mt-4">
                       <div
                         class="flex flex-col w-1/2 p-2 rounded-lg h-1/4 text-gray-900 shadow-md"
                       >
@@ -977,7 +977,7 @@
                       </div>
                     </div>
                     <!-- each discussin forum topic -->
-                    <div class="flex space-x-2 mt-6">
+                    <div class="flex w-full space-x-2 md:justify-between mt-6">
                       <div
                         class="flex flex-col w-1/2 p-2 rounded-lg text-gray-900 shadow-md h-1/2"
                       >
