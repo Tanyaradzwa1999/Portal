@@ -1688,6 +1688,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 5rem;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
+.p-32 {
+  padding: 8rem;
+}
+
+.p-96 {
+  padding: 24rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1758,6 +1770,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
+.py-96 {
+  padding-top: 24rem;
+  padding-bottom: 24rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1788,6 +1805,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
+}
+
+.pb-72 {
+  padding-bottom: 18rem;
 }
 
 .text-left {
@@ -3116,8 +3145,20 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
   }
 }
 
