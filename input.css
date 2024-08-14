@@ -247,8 +247,8 @@ body {
 }
 @media (min-width: 1600px) {
   .xxl {
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 /* calendar widdget styles */
