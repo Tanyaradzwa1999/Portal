@@ -2967,12 +2967,20 @@ body {
     width: 300px;
   }
 
+  .md\:w-\[297px\] {
+    width: 297px;
+  }
+
   .md\:max-w-2xl {
     max-width: 42rem;
   }
 
   .md\:max-w-sm {
     max-width: 24rem;
+  }
+
+  .md\:max-w-6xl {
+    max-width: 72rem;
   }
 
   .md\:flex-row {

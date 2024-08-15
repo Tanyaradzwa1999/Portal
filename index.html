@@ -21,15 +21,15 @@
     <title>Document</title>
   </head>
   <!--bg-sky-900/60  -->
-  <body class="bg-VeryDarkBlue overflow-hidden">
+  <body class="bg-VeryDarkBlue">
     <div class="modalShow transition-all duration-500 ease-in-out"></div>
     <container
-      class="universal-container md:pt-0 bg-transparent flex max-w-full lg:justify-center items-center rounded-none md:rounded-3xl xxl shadow-sky-900/70 mt-12 pb-96"
+      class="universal-container my-0 md:pt-0 bg-transparent flex max-w-full lg:justify-center items-center rounded-none md:rounded-3xl xxl shadow-sky-900/70 mt-10"
     >
       <div class="flex items-start">
         <!-- left side flex item -->
         <div
-          class="section shadow-sm shadow-white/20 w-[250px] md:w-[300px] px-4 pt-4 pb-20 lg:pb-32 rounded-3xl h-full xl:block xl:relative ml-6 hidden md:absolute z-50 animated hamBurgerShow SidebarMenu"
+          class="section shadow-sm shadow-white/20 md:w-[297px] px-4 pt-4 pb-20 rounded-3xl h-full xl:block xl:relative ml-6 hidden md:absolute z-50 animated hamBurgerShow SidebarMenu"
         >
           <!-- flex item for the side items -->
           <div class="flex flex-col">
@@ -220,7 +220,7 @@
 
           <!-- FLEX BOX FOR THE BOTTOM CONTENT -->
           <div
-            class="flex flex-col md:flex-row space-y-20 md:space-y-0 space-x-0 md:space-x-12 max-w-7xl px-4 mt-6 lg:mt-12"
+            class="flex flex-col md:flex-row space-y-20 md:space-y-0 space-x-0 md:space-x-12 max-w-sm md:max-w-6xl px-4 mt-6"
           >
             <!-- flex column for the left welcome back back message -->
             <div class="flex flex-col w-full md:w-1/4 xl:w-1/3">
@@ -238,9 +238,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="flex flex-col text-gray-700 bg-white rounded-3xl p-4 mt-4"
-              >
+              <div class="flex flex-col text-gray-700 bg-white rounded-3xl p-4">
                 <strong class="text-xl text-VeryDarkBlue">Notice Board</strong>
                 <div
                   class="flex space-x-4 w-full bg-stone-50/10 rounded-lg p-2 items-start backdrop-blur-sm font-medium text-gray-900 mb-2 mt-4 shadow-md shadow-gray-500"
@@ -336,10 +334,10 @@
 
                     <div class="flex space-x-8 items-center">
                       <i
-                        class="fa-solid fa-chevron-left text-white md:text-VeryDarkBlue text-base xl:text-lg"
+                        class="fa-solid fa-chevron-left text-white text-base xl:text-lg"
                       ></i>
                       <i
-                        class="fa-solid fa-chevron-right text-white md:text-VeryDarkBlue text-base xl:text-lg"
+                        class="fa-solid fa-chevron-right text-white text-base xl:text-lg"
                       ></i>
                     </div>
                   </div>
@@ -372,15 +370,14 @@
 
                 <div class="w-full md:w-1/2 rounded-3xl">
                   <!-- FLEX COL FOR UPCOMING CLASSES COLUMN AND ATTENDACE -->
-                  <div class="flex flex-col">
+                  <div class="flex flex-col w-full">
                     <!-- NOTICE BOARD FLEX COLUMN -->
                     <!-- UPCOMING CLASSES -->
                     <div class="flex items-center slider sliderContainer mb-4">
-                      <!-- FLEX COL FOR UPCOMING CLASSSES CONTAINER -->
-                      <div class="flex flex-col slide w-full">
+                      <div class="flex flex-col slide">
                         <!-- and item flex-col for motivational quote -->
                         <div
-                          class="flex w-full flex-col rounded-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                          class="flex flex-col rounded-3xl bg-white p-2 xl:p-4 text-white relative"
                         >
                           <!-- teacher flex item -->
 
@@ -390,7 +387,9 @@
                           >
                             Upcoming Classes
                           </strong>
-                          <div class="flex items-center justify-between mt-4">
+                          <div
+                            class="flex items-center space-x-1 xl:justify-between mt-4"
+                          >
                             <i
                               class="fa-solid fa-circle-chevron-left text-VeryDarkBlue/10 text-xl xl:text-2xl hover:text-VeryDarkBlue transition-all duration-500 sliderBtnLeft"
                             ></i>
@@ -475,15 +474,10 @@
                       <div class="flex flex-col slide hidden">
                         <!-- and item flex-col for motivational quote -->
                         <div
-                          class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                          class="flex flex-col rounded-3xl bg-white p-2 xl:p-4 text-white relative"
                         >
                           <!-- teacher flex item -->
 
-                          <img
-                            src="images/chemTeacher.jpg"
-                            class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
-                            alt=""
-                          />
                           <!-- first flex item -->
                           <strong
                             class="text-base xl:text-2xl text-veryDarkBlue"
@@ -530,9 +524,9 @@
                               <div class="flex space-x-4 items-center">
                                 <i class="far fa-clock"></i>
                                 <div class="flex space-x-2">
-                                  <p class="text-sm xl:text-base">0700</p>
+                                  <p class="text-sm xl:text-base">0800</p>
                                   <p class="text-sm xl:text-base">-</p>
-                                  <p class="text-sm xl:text-base">0730</p>
+                                  <p class="text-sm xl:text-base">0830</p>
                                 </div>
                               </div>
                               <div class="flex items-center space-x-4">
@@ -576,15 +570,10 @@
                       <div class="flex flex-col slide hidden">
                         <!-- and item flex-col for motivational quote -->
                         <div
-                          class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                          class="flex flex-col rounded-3xl bg-white p-2 xl:p-4 text-white relative"
                         >
                           <!-- teacher flex item -->
 
-                          <img
-                            src="images/chemTeacher.jpg"
-                            class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
-                            alt=""
-                          />
                           <!-- first flex item -->
                           <strong
                             class="text-base xl:text-2xl text-veryDarkBlue"
@@ -631,9 +620,9 @@
                               <div class="flex space-x-4 items-center">
                                 <i class="far fa-clock"></i>
                                 <div class="flex space-x-2">
-                                  <p class="text-sm xl:text-base">0700</p>
+                                  <p class="text-sm xl:text-base">0900</p>
                                   <p class="text-sm xl:text-base">-</p>
-                                  <p class="text-sm xl:text-base">0730</p>
+                                  <p class="text-sm xl:text-base">0930</p>
                                 </div>
                               </div>
                               <div class="flex items-center space-x-4">
@@ -678,15 +667,10 @@
                       <div class="flex flex-col slide hidden">
                         <!-- and item flex-col for motivational quote -->
                         <div
-                          class="flex flex-col rounded-b-3xl rounded-tl-3xl bg-white p-2 xl:p-4 mt-2 text-white relative"
+                          class="flex flex-col rounded-3xl bg-white p-2 xl:p-4 text-white relative"
                         >
                           <!-- teacher flex item -->
 
-                          <img
-                            src="images/chemTeacher.jpg"
-                            class="w-14 h-14 rounded-full absolute ml-[210px] md:ml-[230px] xl:ml-[290px] -mt-10 z-10"
-                            alt=""
-                          />
                           <!-- first flex item -->
                           <strong
                             class="text-base xl:text-2xl text-veryDarkBlue"
@@ -733,9 +717,9 @@
                               <div class="flex space-x-4 items-center">
                                 <i class="far fa-clock"></i>
                                 <div class="flex space-x-2">
-                                  <p class="text-sm xl:text-base">0700</p>
+                                  <p class="text-sm xl:text-base">1000</p>
                                   <p class="text-sm xl:text-base">-</p>
-                                  <p class="text-sm xl:text-base">0730</p>
+                                  <p class="text-sm xl:text-base">1030</p>
                                 </div>
                               </div>
                               <div class="flex items-center space-x-4">
@@ -777,8 +761,7 @@
                         </div>
                       </div>
                     </div>
-                    <!-- SET TARGETS AND PROGRESS  -->
-                    <div class="flex items-center space-x-2 md:justify-between">
+                    <div class="flex items-center space-x-2">
                       <div
                         class="flex justify-between space-x-4 bg-white rounded-3xl"
                       >
@@ -826,7 +809,7 @@
                           time.
                         </p>
                         <i
-                          class="fa-solid fa-circle-plus text-2xl absolute bg-white rounded-full ml-[148px] xl:ml-[160px] -mt-6 text-gray-500 hover:text-white transition-all duration-500"
+                          class="fa-solid fa-circle-plus text-2xl absolute bg-white rounded-full ml-[148px] -mt-6 text-gray-500 hover:text-white transition-all duration-500"
                         ></i>
                       </div>
                     </div>
@@ -940,11 +923,11 @@
                     class="flex flex-col w-full bg-white rounded-3xl p-4 items-start backdrop-blur-sm mb-6"
                   >
                     <!-- flex Discussion FORUM balance -->
-                    <strong class="text-xl text-VeryDarkBlue mt-2"
+                    <strong class="text-xl text-VeryDarkBlue"
                       >Upcoming Events</strong
                     >
 
-                    <div class="flex space-x-2 w-full md:justify-between mt-4">
+                    <div class="flex space-x-2 mt-4">
                       <div
                         class="flex flex-col w-1/2 p-2 rounded-lg h-1/4 text-gray-900 shadow-md"
                       >
@@ -977,7 +960,7 @@
                       </div>
                     </div>
                     <!-- each discussin forum topic -->
-                    <div class="flex w-full space-x-2 md:justify-between mt-6">
+                    <div class="flex space-x-2 mt-6">
                       <div
                         class="flex flex-col w-1/2 p-2 rounded-lg text-gray-900 shadow-md h-1/2"
                       >
